@@ -1,0 +1,50 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PosterBoardUIServices.framework/PosterBoardUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PRPosterSnapshotDefinitionIdentifierIncomingCallComposite,
+                            _PRPosterSnapshotDefinitionIdentifierIncomingCallPosterContentsExcludingBackground,
+                            _PRPosterSnapshotDefinitionIdentifierIncomingCallPosterContentsOnly,
+                            _PRPosterSnapshotDefinitionIdentifierIncomingCallPosterContentsWithObscurableContentView,
+                            _PRPosterSnapshotDefinitionIdentifierIncomingCallPosterContentsWithOverlay,
+                            _PRUISIncomingCallPosterAttachmentTypeIdentifierBoopToMeetNameLabelOverlay,
+                            _PRUISIncomingCallPosterAttachmentTypeIdentifierContactCardNameLabelOverlay,
+                            _PRUISIncomingCallPosterAttachmentTypeIdentifierInCallUIOverlay,
+                            _PRUISIncomingCallPosterAttachmentTypeIdentifierNameLabel,
+                            _PRUISLogAttachments, _PRUISLogCommon,
+                            _PRUISLogEditing, _PRUISLogRendering,
+                            _PRUISLogSnapshotting,
+                            _PRUISPosterConfigurationFinalizerErrorDomain,
+                            _PosterBoardUIServicesLoggingSubsystem,
+                            _PosterBoardUIServicesVersionNumber,
+                            _PosterBoardUIServicesVersionString,
+                            __PRUISIncomingCallPosterSnapshotAttachmentTypeIdentifierIsPredefined,
+                            __PRUISIncomingCallPosterSnapshotAttachmentTypeIdentifierWillIncludeName,
+                            __PRUISIncomingCallPosterSnapshotDefinitionLevelSetForIdentifier ]
+    objc-classes:         [ PRUISAmbientPosterSceneLayerHostView,
+                            PRUISAmbientPosterViewController,
+                            PRUISDefaultSessionReconnectPolicy,
+                            PRUISIncomingCallPosterContext,
+                            PRUISIncomingCallSnapshotDefinition,
+                            PRUISMutablePosterSnapshotRequest,
+                            PRUISPosterAppearanceObservingAttachmentProvider,
+                            PRUISPosterAttachment,
+                            PRUISPosterConfigurationFinalizer,
+                            PRUISPosterConfigurationUtilities,
+                            PRUISPosterEditingViewController,
+                            PRUISPosterRenderingViewController,
+                            PRUISPosterSnapshotController,
+                            PRUISPosterSnapshotControllerActiveAssertion,
+                            PRUISPosterSnapshotFilesystemCache,
+                            PRUISPosterSnapshotRequest,
+                            PRUISPosterSnapshotResult,
+                            PRUISPosterTitleStyleAttributes,
+                            _PRAmbientPosterSnapshotDefinition,
+                            _PRUISPosterRenderingEnqueuedSnapshot ]
+...

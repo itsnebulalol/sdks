@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UserSafetyML.framework/UserSafetyML
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _USMLAnalysisConfigurationDebugFramesOutputPathPrefixKey,
+                            _USMLAnalysisConfigurationDeviceTypeKey,
+                            _USMLEnableAllClasses, _USMLEnableImageDetection,
+                            _USMLErrorDomain, _USMLErrorFromSCML,
+                            _USMLHandlerImageClassificationScores,
+                            _USMLHandlerImageDetections,
+                            _USMLImageClassificationLabelNSFWAny,
+                            _USMLImageClassificationLabelNSFWExplicit,
+                            _USMLImageModelVersionV1_5_0,
+                            _USMLImageModelVersionV1_6_0,
+                            _USMLImageModelVersionV1_6_1, _USMLImageScaleMethod,
+                            _USMLImageScaleMethodCGInterpolationHigh,
+                            _USMLImageScaleMethodCGInterpolationLow,
+                            _USMLImageScaleMethodCGInterpolationMedium,
+                            _USMLImageScaleMethodCGInterpolationNone,
+                            _USMLImageScaleMethodvImage, _USMLImageSensitivity,
+                            _USMLImageSensitivityScore, _USMLTrackPerformance,
+                            _USMLUseANE, _USMLUseAnyAvailableDevice, _USMLUseCPU,
+                            _USMLUseGPU, _USMLUseImageAnalyzer, _USMLUseMTLDevice,
+                            _USMLUseTextAnalyzer, _UserSafetyMLVersionNumber,
+                            _UserSafetyMLVersionString ]
+    objc-classes:         [ USMLAnalysisConfiguration, USMLAnalysisResult,
+                            USMLDetectionBox, USMLHandler, USMLImageAnalysisResult,
+                            USMLImageDetectionResult,
+                            USMLVideoAnalysisConfiguration,
+                            USMLVideoAnalysisResult, USMLVideoAnalyzer ]
+...

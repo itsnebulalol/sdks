@@ -1,0 +1,70 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HeartRhythmUI.framework/HeartRhythmUI
+current-version:       0
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HRElectrocardiogramOnboardingCompletedNotificationName,
+                            _HRElectrocardiogramUpdateGeneratedUserDefaultKey,
+                            _HRElectrocardiogramUpdateViewedUserDefaultKey,
+                            _HRHeartRhythmUIFrameworkBundle,
+                            _HROnboardingAtrialFibrillationCountryCodeKey,
+                            _HROnboardingAtrialFibrillationEnableNotificationsKey,
+                            _HROnboardingElectrocardiogramAlgorithmVersionKey,
+                            _HROnboardingElectrocardiogramCountryCodeKey,
+                            _HROnboardingElectrocardiogramDidCompleteRecordingKey,
+                            _HROnboardingElectrocardiogramStartDateKey,
+                            _HRUIECGLocalizedString,
+                            _HRUIElectrocardiogramLearnMoreLink,
+                            _HeartRhythmUIVersionNumber,
+                            _HeartRhythmUIVersionString,
+                            _NSURLFromHRLinkTextViewURLIdentifier ]
+    objc-classes:         [ HRAtrialFibrillationDataTypeDescriptionCell,
+                            HRAtrialFibrillationDetailViewEducationView,
+                            HRAtrialFibrillationEducationSection,
+                            HRAtrialFibrillationIntroViewController,
+                            HRAtrialFibrillationOnboardingManager,
+                            HRBulletedIndentedLabel,
+                            HRElectrocardiogramCurrentLocationOnboardingDeterminer,
+                            HRElectrocardiogramEducationSection,
+                            HRElectrocardiogramEducationViewController,
+                            HRElectrocardiogramOnboardingManager,
+                            HRElectrocardiogramReportGenerator,
+                            HRElectrocardiogramResultViewItem,
+                            HRElectrocardiogramSessionScreenView,
+                            HRElectrocardiogramSessionSimulationView,
+                            HRElectrocardiogramWatchAppInstallability,
+                            HRExpandedContentItem,
+                            HRExpandedContentItemLearnMore, HRImageLabel,
+                            HRLinkTextView, HRMetadataEducationTableViewCell,
+                            HRMiniTilePlatterView,
+                            HROnboardingAtrialFibrillationEnableViewController,
+                            HROnboardingAtrialFibrillationGateViewController,
+                            HROnboardingAtrialFibrillationIntroViewController,
+                            HROnboardingAtrialFibrillationLimitationViewController,
+                            HROnboardingAtrialFibrillationWhatIsViewController,
+                            HROnboardingBulletPoint,
+                            HROnboardingBulletPointViewController,
+                            HROnboardingECG2PossibleResultsViewController,
+                            HROnboardingElectrocardiogramAvailabilityViewController,
+                            HROnboardingElectrocardiogramExplanationViewController,
+                            HROnboardingElectrocardiogramFeatureLimitationsViewController,
+                            HROnboardingElectrocardiogramPossibleResultsViewController,
+                            HROnboardingElectrocardiogramResultView,
+                            HROnboardingElectrocardiogramSetupCompleteViewController,
+                            HROnboardingElectrocardiogramTakeRecordingViewController,
+                            HROnboardingElectrocardiogramUpdateAvailabilityViewController,
+                            HROnboardingElectrocardiogramUpdateCompleteViewController,
+                            HROnboardingHeroExplanationViewController,
+                            HROnboardingInlineExpandedContentView,
+                            HROnboardingWristImageView, HRPaddingLabel,
+                            HRParagraphTableViewCell,
+                            HRSimulatedAtrialFibrillationNotificationView,
+                            HRSpeedBumpBubble, HRSpeedBumpItem,
+                            HRSpeedBumpViewController, HRStackedButtonView,
+                            HRUIAnalyticsManager, HRVideoPlayerView ]
+...

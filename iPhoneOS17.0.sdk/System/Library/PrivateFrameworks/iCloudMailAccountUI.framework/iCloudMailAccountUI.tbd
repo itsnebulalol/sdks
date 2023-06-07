@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/iCloudMailAccountUI.framework/iCloudMailAccountUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s19iCloudMailAccountUI01iabC13ProviderSwiftC024$__lazy_storage_$_legacyB7Creator33_B5304750A60E58E5C5649D4432D52007LLAA06LegacybcJ0CSgvpfi,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftC7present4with10completionySb_yyctF,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftC7present4with10completionySb_yyctFTq,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftC9presenter05appleC012accountStoreACSo16UIViewControllerC_So9ACAccountCSo0mJ0CtcfC,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftC9presenter05appleC012accountStoreACSo16UIViewControllerC_So9ACAccountCSo0mJ0CtcfCTq,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftC9presenter05appleC012accountStoreACSo16UIViewControllerC_So9ACAccountCSo0mJ0Ctcfc,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCACycfC,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCACycfc,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCMa,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCMn,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCN,
+                            _$s19iCloudMailAccountUI01iabC13ProviderSwiftCfD,
+                            _iCloudMailAccountUIVersionNumber,
+                            _iCloudMailAccountUIVersionString ]
+    objc-classes:         [ iCloudMailAccountProvider,
+                            iCloudMailAccountProviderSwift ]
+...

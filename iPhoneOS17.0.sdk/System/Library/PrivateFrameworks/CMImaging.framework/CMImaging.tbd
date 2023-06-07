@@ -1,0 +1,71 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    re-exports:           [ /System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore ]
+    symbols:              [ _CMILSCOISAdaptation_convertV2LSCTableToV1LSCTable,
+                            _CMILSCOISAdaptation_convertV2LSCTableToV1LSCTableWithOISOffset,
+                            _CopyPixelBuffer, _Create420PixelBufferFromPGMFiles,
+                            _CreatePixelBuffer, _CreatePixelBufferExtended,
+                            _CreatePixelBufferExtendedFromFile,
+                            _CreatePixelBufferFromCFData,
+                            _CreatePixelBufferFromFile,
+                            _CreatePixelBufferFromPGMFile,
+                            _CreatePixelBufferPool,
+                            _CreatePixelBufferWithWiringAssertion,
+                            _CreateSampleBuffer,
+                            _DeriveImageWidthHeightFromFilesize,
+                            _DerivePixelFormatTypeFromFilename, _FigMetalDecRef,
+                            _FigMetalDetachFromAllocator, _FigMetalGetRefCount,
+                            _FigMetalIncRef, _FigMetalIsValid,
+                            _FillPixelBufferWithRandomData,
+                            _GetPixelBlockSizeInBytes, _GuessWidth,
+                            _PixelBufferLineIterator,
+                            _Write420PixelBufferChannelToPGMFile,
+                            _WriteFloat16PixelBufferChannelToPGMFile,
+                            _WriteOneComponent8PixelBufferToPGMFile,
+                            _WritePixelBufferToFile, _bfpn_apply_weights,
+                            _bfpn_bilateral_weights,
+                            _bfpn_calc_deinterleaved_residual,
+                            _bfpn_calc_window_shading_score,
+                            _bfpn_calculate_hf_filtered,
+                            _bfpn_calculate_hf_stats, _bfpn_calculate_lf_stats,
+                            _bfpn_channel_mean, _bfpn_clear_clipped_pixels,
+                            _bfpn_convert_uint8_to_float,
+                            _bfpn_correction_create_dict_from_metadata,
+                            _bfpn_create_correction_model_from_fdr,
+                            _bfpn_deinterleave_bayer, _bfpn_downsample2x,
+                            _bfpn_generate_hfmodel, _bfpn_generate_lfmodel,
+                            _bfpn_normalize, _bfpn_sampler_fetchRow,
+                            _bfpn_sampler_free, _bfpn_sampler_init,
+                            _bfpn_spatial_mean, _bfpn_spatial_median,
+                            _bfpn_spatial_minimum_and_maximum,
+                            _bfpn_temporal_mean_and_variance,
+                            _bfpn_temporal_robust_mean_and_variance,
+                            _bfpn_update_clipping_mask,
+                            _bfpn_update_running_stats, _bfpn_upsample2x,
+                            _bfpn_upsample2x_and_combine,
+                            _bfpn_upsample2x_and_interleave,
+                            _packHomographyToNSArray,
+                            _unpackHomographyFromNSArray ]
+    objc-classes:         [ CMIBareMetalTexture, CMIExternalMemoryConfiguration,
+                            CMIExternalMemoryDescriptor,
+                            CMIExternalMemoryResource, CMIModuleCalibration,
+                            CMINoiseModels, CMIRangeAllocator,
+                            CMIResourceMetalTexture,
+                            CMIResourceMetalTextureBiPlanarYUV,
+                            CMIResourceMetalTextureDescriptor,
+                            CMIShadingFPNCorrectionImage, CMISharpnessScore,
+                            FigMetalAllocator, FigMetalAllocatorBackend,
+                            FigMetalAllocatorBackendDescriptor,
+                            FigMetalAllocatorDescriptor,
+                            FigMetalBufferDescriptor, FigMetalContext,
+                            FigMetalExecutionStatus, FigMetalTextureDescriptor,
+                            VISProvider ]
+...

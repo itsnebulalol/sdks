@@ -1,0 +1,57 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ActivitySharingServices.framework/ActivitySharingServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s23ActivitySharingServices6DaemonV16bundleIdentifierSSvg,
+                            _$s23ActivitySharingServices6DaemonV16bundleIdentifierSSvpMV,
+                            _$s23ActivitySharingServices6DaemonV8activateyyYaF,
+                            _$s23ActivitySharingServices6DaemonV8activateyyYaFTu,
+                            _$s23ActivitySharingServices6DaemonVACycfC,
+                            _$s23ActivitySharingServices6DaemonVMa,
+                            _$s23ActivitySharingServices6DaemonVMn,
+                            _$s23ActivitySharingServices6DaemonVN,
+                            _$s23ActivitySharingServices7SandboxV9bootstrapyySSFZ,
+                            _$s23ActivitySharingServices7SandboxVMa,
+                            _$s23ActivitySharingServices7SandboxVMn,
+                            _$s23ActivitySharingServices7SandboxVN,
+                            _$s23ActivitySharingServices8LoggableMp,
+                            _$s23ActivitySharingServices8LoggablePAAE14logDescriptionSSvg,
+                            _$s23ActivitySharingServices8LoggablePAAE14logDescriptionSSvpMV,
+                            _$s23ActivitySharingServices8PlatformO7currentACvMZ,
+                            _$s23ActivitySharingServices8PlatformO7currentACvgZ,
+                            _$s23ActivitySharingServices8PlatformO7currentACvsZ,
+                            _$s23ActivitySharingServices8PlatformO8allCasesSayACGvgZ,
+                            _$s23ActivitySharingServices8PlatformO8rawValueACSgSi_tcfC,
+                            _$s23ActivitySharingServices8PlatformO8rawValueSivg,
+                            _$s23ActivitySharingServices8PlatformO8rawValueSivpMV,
+                            _$s23ActivitySharingServices8PlatformO9appBundleSSyF,
+                            _$s23ActivitySharingServices8PlatformOMa,
+                            _$s23ActivitySharingServices8PlatformOMn,
+                            _$s23ActivitySharingServices8PlatformON,
+                            _$s23ActivitySharingServices8PlatformOSHAAMc,
+                            _$s23ActivitySharingServices8PlatformOSQAAMc,
+                            _$s23ActivitySharingServices8PlatformOSYAAMc,
+                            _$s23ActivitySharingServices8PlatformOs12CaseIterableAAMc,
+                            _$s23ActivitySharingServices9AsyncLockC15unownedExecutorScevg,
+                            _$s23ActivitySharingServices9AsyncLockC15unownedExecutorScevpMV,
+                            _$s23ActivitySharingServices9AsyncLockCMa,
+                            _$s23ActivitySharingServices9AsyncLockCMm,
+                            _$s23ActivitySharingServices9AsyncLockCMn,
+                            _$s23ActivitySharingServices9AsyncLockCMo,
+                            _$s23ActivitySharingServices9AsyncLockCMu,
+                            _$s23ActivitySharingServices9AsyncLockCN,
+                            _$s23ActivitySharingServices9AsyncLockCScAAAMc,
+                            _$s23ActivitySharingServices9AsyncLockCfD,
+                            _$s23ActivitySharingServices9AsyncLockCfd,
+                            _$sSq23ActivitySharingServicesE11descriptionSSvg,
+                            _$sSq23ActivitySharingServicesE11descriptionSSvpMV,
+                            _$sxSgs23CustomStringConvertible23ActivitySharingServicesMc,
+                            _ActivitySharingServicesVersionNumber,
+                            _ActivitySharingServicesVersionString ]
+...

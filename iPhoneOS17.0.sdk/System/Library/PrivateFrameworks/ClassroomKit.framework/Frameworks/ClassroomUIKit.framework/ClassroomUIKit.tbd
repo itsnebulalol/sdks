@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ClassroomKit.framework/Frameworks/ClassroomUIKit.framework/ClassroomUIKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s14ClassroomUIKit23EasyMAIDSignInTesterAppV4bodyQrvg,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppV4bodyQrvpMV,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppV4bodyQrvpQOMQ,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppV7SwiftUI0G0AAMc,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppVACycfC,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppVMa,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppVMn,
+                            _$s14ClassroomUIKit23EasyMAIDSignInTesterAppVN ]
+...

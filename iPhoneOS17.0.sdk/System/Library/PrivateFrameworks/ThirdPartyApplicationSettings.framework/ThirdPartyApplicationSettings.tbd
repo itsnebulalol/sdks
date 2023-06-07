@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ThirdPartyApplicationSettings.framework/ThirdPartyApplicationSettings
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s29ThirdPartyApplicationSettings0cD4ViewV27applicationBundleIdentifierACSS_tcfC,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewV4bodyQrvg,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewV4bodyQrvpMV,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewV4bodyQrvpQOMQ,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewV7SwiftUI0E0AAMc,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewVMa,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewVMn,
+                            _$s29ThirdPartyApplicationSettings0cD4ViewVN ]
+...

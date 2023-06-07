@@ -1,0 +1,76 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HomeUICommon.framework/HomeUICommon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s12HomeUICommon13SwiftUICanaryV0C2UI4ViewAAMc,
+                            _$s12HomeUICommon13SwiftUICanaryV4bodyQrvg,
+                            _$s12HomeUICommon13SwiftUICanaryV4bodyQrvpMV,
+                            _$s12HomeUICommon13SwiftUICanaryV4bodyQrvpQOMQ,
+                            _$s12HomeUICommon13SwiftUICanaryVACycfC,
+                            _$s12HomeUICommon13SwiftUICanaryVMa,
+                            _$s12HomeUICommon13SwiftUICanaryVMn,
+                            _$s12HomeUICommon13SwiftUICanaryVN,
+                            _$s12HomeUICommon14PlatformCanaryC10isMacBuildSbvau,
+                            _$s12HomeUICommon14PlatformCanaryC10isMacBuildSbvgZ,
+                            _$s12HomeUICommon14PlatformCanaryC10isMacBuildSbvpZ,
+                            _$s12HomeUICommon14PlatformCanaryC5tweetSSvau,
+                            _$s12HomeUICommon14PlatformCanaryC5tweetSSvgZ,
+                            _$s12HomeUICommon14PlatformCanaryC5tweetSSvpZ,
+                            _$s12HomeUICommon14PlatformCanaryCACycfC,
+                            _$s12HomeUICommon14PlatformCanaryCACycfc,
+                            _$s12HomeUICommon14PlatformCanaryCMa,
+                            _$s12HomeUICommon14PlatformCanaryCMn,
+                            _$s12HomeUICommon14PlatformCanaryCN,
+                            _$s12HomeUICommon14PlatformCanaryCfD,
+                            _$s12HomeUICommon15IconViewStylingO8rawValueACSgSi_tcfC,
+                            _$s12HomeUICommon15IconViewStylingO8rawValueSivg,
+                            _$s12HomeUICommon15IconViewStylingO8rawValueSivpMV,
+                            _$s12HomeUICommon15IconViewStylingOMa,
+                            _$s12HomeUICommon15IconViewStylingOMn,
+                            _$s12HomeUICommon15IconViewStylingON,
+                            _$s12HomeUICommon15IconViewStylingOSHAAMc,
+                            _$s12HomeUICommon15IconViewStylingOSQAAMc,
+                            _$s12HomeUICommon15IconViewStylingOSYAAMc,
+                            _$s12HomeUICommon15IconViewWrapperV10makeUIView7contextSo06HUIconD0C7SwiftUI0G20RepresentableContextVyACG_tF,
+                            _$s12HomeUICommon15IconViewWrapperV12sizeThatFits_02uiD07contextSo6CGSizeVSg7SwiftUI08ProposedD4SizeV_So06HUIconD0CAJ26UIViewRepresentableContextVyACGtF,
+                            _$s12HomeUICommon15IconViewWrapperV12updateUIView_7contextySo06HUIconD0C_7SwiftUI0G20RepresentableContextVyACGtF,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptor0F4Size7stylingACSo06HFIconG0_pSg_So06HUIconH0VAA0cD7StylingOtcfC,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptorSo06HFIconG0_pSgvM,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptorSo06HFIconG0_pSgvg,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptorSo06HFIconG0_pSgvpMV,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptorSo06HFIconG0_pSgvpfi,
+                            _$s12HomeUICommon15IconViewWrapperV14iconDescriptorSo06HFIconG0_pSgvs,
+                            _$s12HomeUICommon15IconViewWrapperV17appearanceStylingAA0cdG0OvM,
+                            _$s12HomeUICommon15IconViewWrapperV17appearanceStylingAA0cdG0Ovg,
+                            _$s12HomeUICommon15IconViewWrapperV17appearanceStylingAA0cdG0OvpMV,
+                            _$s12HomeUICommon15IconViewWrapperV17appearanceStylingAA0cdG0Ovs,
+                            _$s12HomeUICommon15IconViewWrapperV7SwiftUI0D0AAMc,
+                            _$s12HomeUICommon15IconViewWrapperV7SwiftUI19UIViewRepresentableAAMc,
+                            _$s12HomeUICommon15IconViewWrapperV8iconSizeSo06HUIconG0VvM,
+                            _$s12HomeUICommon15IconViewWrapperV8iconSizeSo06HUIconG0Vvg,
+                            _$s12HomeUICommon15IconViewWrapperV8iconSizeSo06HUIconG0VvpMV,
+                            _$s12HomeUICommon15IconViewWrapperV8iconSizeSo06HUIconG0Vvpfi,
+                            _$s12HomeUICommon15IconViewWrapperV8iconSizeSo06HUIconG0Vvs,
+                            _$s12HomeUICommon15IconViewWrapperVMa,
+                            _$s12HomeUICommon15IconViewWrapperVMn,
+                            _$s12HomeUICommon15IconViewWrapperVN,
+                            _HFCAPackageLayerTagPrimaryColor,
+                            _HFCAPackageLayerTagSecondaryColor, _HUCommonBundle,
+                            _HUCommonImageNamed, _HUCommonNullableImageNamed,
+                            _HUDefaultSizeForIconSize, _HUIconImageNamed,
+                            _pointSizeAdditiveInterval ]
+    objc-classes:         [ HUAlbumIconContentView, HUCAPackageIconContentView,
+                            HUCAPackageIconManager, HUCAPackageLayer, HUCircleView,
+                            HUFontUtilities, HUIconContentView,
+                            HUIconContentViewReuseQueue, HUIconView,
+                            HUImageIconContentView, HUTemperatureIconContentView,
+                            _HUCommonMoveAlongNothingToSeeHere,
+                            _TtC12HomeUICommon14PlatformCanary ]
+    objc-ivars:           [ _HUCommonMoveAlongNothingToSeeHere._theseAreNotTheIvarsYouAreLookingFor ]
+...

@@ -1,0 +1,106 @@
+---
+Name: Vision
+
+Classes:
+- Name: VNFaceLandmarkRegion2D
+  Properties:
+  - Name: normalizedPoints
+    PropertyKind: Instance
+    SwiftPrivate: true
+    Nullability: N
+  - Name: precisionEstimatesPerPoint
+    PropertyKind: Instance
+    SwiftName: __precisionEstimatesPerPoint
+    SwiftPrivate: true
+    Nullability: O
+  Methods:
+  - Selector: "pointsInImageOfSize:"
+    MethodKind: Instance
+    SwiftName: "__pointsInImage(imageSize:)"
+    SwiftPrivate: true
+    NullabilityOfRet: N
+
+- Name: VNFaceObservation
+  Properties:
+  - Name: faceCaptureQuality
+    PropertyKind: Instance
+    SwiftName: __faceCaptureQuality
+    SwiftPrivate: true
+    Nullability: O
+
+- Name: VNRecognizedText
+  Methods:
+  - Selector: "boundingBoxForRange:error:"
+    MethodKind: Instance
+    SwiftName: "__boundingBox"
+    SwiftPrivate: true
+    NullabilityOfRet: N
+    
+- Name: VNContour
+  Properties:
+  - Name: normalizedPoints
+    PropertyKind: Instance
+    SwiftName: __normalizedPoints
+    SwiftPrivate: true
+    Nullability: N
+
+- Name: VNDetectHumanBodyPoseRequest
+  Methods:
+  - Selector: "supportedJointNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+  - Selector: "supportedJointsGroupNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointsGroupNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+
+- Name: VNDetectHumanHandPoseRequest
+  Methods:
+  - Selector: "supportedJointNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+  - Selector: "supportedJointsGroupNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointsGroupNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+
+- Name: VNDetectAnimalBodyPoseRequest
+  Methods:
+  - Selector: "supportedJointNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+  - Selector: "supportedJointsGroupNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointsGroupNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+
+- Name: VNHumanBodyPose3DObservation
+  Methods:
+  - Selector: "getCameraRelativePosition:forJointName:error:"
+    MethodKind: Instance
+    SwiftName: "__getCameraRelativePosition(_:_:)"
+    SwiftPrivate: true
+    NullabilityOfRet: N
+    
+- Name: VNDetectHumanBodyPose3DRequest
+  Methods:
+  - Selector: "supportedJointNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+  - Selector: "supportedJointsGroupNamesAndReturnError:"
+    MethodKind: Instance
+    SwiftName: "__supportedJointsGroupNames"
+    SwiftPrivate: true
+    NullabilityOfRet: O
+

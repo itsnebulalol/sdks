@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage
+current-version:       121.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _BMFileAccessModeFromBMFrameStorePermission,
+                            _BMPBStoreBookmarkReadFrom,
+                            _BMPBTombstoneEventReadFrom,
+                            _BMPruningPolicyMaxAgeNoLimit,
+                            _BMPruningPolicyMaxEventCountNoLimit,
+                            _BMPruningPolicyMaxStreamSizeNoLimit,
+                            _BMStreamHealthErrorDomain,
+                            _BiomeStorageVersionNumber,
+                            _BiomeStorageVersionString,
+                            _NSStringFromBMFrameStorePermission,
+                            _NSStringFromBMFrameWriteStatus,
+                            _bm_crc32WithInitValue, _bm_defaultStoreSegmentSize,
+                            _bm_frame_bytesV1, _bm_frame_bytesV2,
+                            _bm_frame_header_infoV1, _bm_frame_header_statusV1,
+                            _bm_generateChecksum, _bm_useAdler32, _bm_useCrc32,
+                            _bm_v1StoreVersion, _bm_v2StoreVersion, _kSegmentMagic ]
+    objc-classes:         [ BMFrame, BMFrameStore, BMMemoryMapping,
+                            BMPBStoreBookmark, BMPBTombstoneEvent, BMPruningPolicy,
+                            BMSegmentManager, BMSegmentManagerProtectedState,
+                            BMStoreBookmark, BMStoreConfig, BMStoreEnumerator,
+                            BMStoreEnumeratorBase, BMStoreEvent, BMStreamDatastore,
+                            BMStreamDatastoreBase,
+                            BMStreamDatastoreOutOfProcessWriter,
+                            BMStreamDatastorePruner, BMStreamDatastoreReader,
+                            BMStreamDatastoreWriter, BMStreamMetadata,
+                            BMStreamTombstoneEventDatastore, BMTombstoneEvent,
+                            BMTombstoneEventEnumerator, BMWeakProxy, BMWriteServer,
+                            BMWriteServerExported, BMWriteService ]
+    objc-ivars:           [ BMPBStoreBookmark._has,
+                            BMPBStoreBookmark._iterationStartTime,
+                            BMPBStoreBookmark._offset,
+                            BMPBStoreBookmark._segmentName,
+                            BMPBStoreBookmark._streamId, BMPBTombstoneEvent._has,
+                            BMPBTombstoneEvent._length,
+                            BMPBTombstoneEvent._offset,
+                            BMPBTombstoneEvent._processName,
+                            BMPBTombstoneEvent._reason,
+                            BMPBTombstoneEvent._segmentName ]
+...

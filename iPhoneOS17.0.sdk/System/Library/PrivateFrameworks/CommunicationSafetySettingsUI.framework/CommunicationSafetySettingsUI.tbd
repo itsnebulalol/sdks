@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework/CommunicationSafetySettingsUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC013communicationB11ModeEnabledSbvgTj,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC013communicationB11ModeEnabledSbvgTq,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC013communicationB11ModeEnabledSbvpMV,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC6sharedACvMZ,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC6sharedACvgZ,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC6sharedACvsZ,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelC7Combine16ObservableObjectAAMc,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCACycfC,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCACycfCTj,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCACycfCTq,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCACycfc,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCMa,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCMm,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCMn,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCMo,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCMu,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCN,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCfD,
+                            _$s29CommunicationSafetySettingsUI24NudityDetectionRootModelCfd,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewV05SwiftD00I0AAMc,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewV4bodyQrvg,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewV4bodyQrvpMV,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewV4bodyQrvpQOMQ,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewVACycfC,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewVMa,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewVMn,
+                            _$s29CommunicationSafetySettingsUI27NudityDetectionAppsRootViewVN,
+                            _$s2os6LoggerV29CommunicationSafetySettingsUIE5CSSUIACvgZ,
+                            _$sSo32NudityDetectionPreferencesHelperC29CommunicationSafetySettingsUIEABycfC,
+                            _$sSo32NudityDetectionPreferencesHelperC29CommunicationSafetySettingsUIEABycfc,
+                            _$sSo32NudityDetectionPreferencesHelperCMa ]
+    objc-classes:         [ NudityDetectionPreferencesHelper ]
+...

@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC4dataSay10Foundation4DateV4date_Si5countSS5labelSS5valuetGvpfP,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC6sharedACvau,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC6sharedACvgZ,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC6sharedACvpZ,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC7Combine16ObservableObjectAAMc,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC7setDatayySaySDySSypGGF,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelC7setDatayySaySDySSypGGFTq,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelCMa,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelCMn,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelCN,
+                            _$s24SoundsAndHapticsSettings31HeadphoneAudioNotificationModelCfD,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryC6createSo16UIViewControllerCyFZ,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCACycfC,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCACycfc,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCMa,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCMn,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCN,
+                            _$s24SoundsAndHapticsSettings33HeadphoneNotificationChartFactoryCfD,
+                            _SHSCanAdjustVolumeUsingButtonsPreferencesForSpringBoardKey,
+                            _SHSCanAdjustVolumeUsingButtonsPreferencesKey,
+                            _SHSLogForCategory, _SHSSoundsPreferencesDomain,
+                            _SHSSystemHapticsPreferencesKey,
+                            _SHSSystemHapticsSetting,
+                            _SHS_BundleForSoundsAndHapticsSettingsFramework,
+                            _SHS_LocalizedStringForSounds ]
+    objc-classes:         [ SHSAnalytics, SHSAudioPlayback, SHSDualSIMToneHelper,
+                            SHSSoundsPrefController, SHSSpeakersPrefController,
+                            SHSToneController,
+                            _TtC24SoundsAndHapticsSettings31HeadphoneAudioNotificationModel,
+                            _TtC24SoundsAndHapticsSettings33HeadphoneNotificationChartFactory ]
+...

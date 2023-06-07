@@ -1,0 +1,68 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriReaderIntents.framework/SiriReaderIntents
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s17SiriReaderIntents010MockSafariB4DataV23__derived_struct_equalsySbAC_ACtFZ,
+                            _$s17SiriReaderIntents010MockSafariB4DataV4fromACs7Decoder_p_tKcfC,
+                            _$s17SiriReaderIntents010MockSafariB4DataV6encode2toys7Encoder_p_tKF,
+                            _$s17SiriReaderIntents010MockSafariB4DataVMa,
+                            _$s17SiriReaderIntents010MockSafariB4DataVMn,
+                            _$s17SiriReaderIntents010MockSafariB4DataVN,
+                            _$s17SiriReaderIntents010MockSafariB4DataVSEAAMc,
+                            _$s17SiriReaderIntents010MockSafariB4DataVSQAAMc,
+                            _$s17SiriReaderIntents010MockSafariB4DataVSeAAMc,
+                            _$s17SiriReaderIntents0B10NLv3IntentV0A8Ontology0E15NodeTraversableAAMc,
+                            _$s17SiriReaderIntents0B10NLv3IntentV0A8Ontology15NLIntentWrapperAAMc,
+                            _$s17SiriReaderIntents0B10NLv3IntentV11skipForwardSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV11skipForwardSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV12skipBackwardSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV12skipBackwardSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV18domainOntologyNode0aG006DomaingH0Cvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV18domainOntologyNode0aG006DomaingH0CvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4gotoSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4gotoSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4readSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4readSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4stopSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV4stopSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6intent0A8Ontology8NLIntentVvM,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6intent0A8Ontology8NLIntentVvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6intent0A8Ontology8NLIntentVvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6intent0A8Ontology8NLIntentVvs,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6intentAC0A8Ontology8NLIntentV_tcfC,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6selectSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV6selectSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV7inquireSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV7inquireSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentV8continueSbvg,
+                            _$s17SiriReaderIntents0B10NLv3IntentV8continueSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv3IntentVMa,
+                            _$s17SiriReaderIntents0B10NLv3IntentVMn,
+                            _$s17SiriReaderIntents0B10NLv3IntentVN,
+                            _$s17SiriReaderIntents0B10NLv3IntentVs23CustomStringConvertibleAAMc,
+                            _$s17SiriReaderIntents0B10NLv4IntentV13userDialogActACSo011SIRINLUUsergH0_p_tcfC,
+                            _$s17SiriReaderIntents0B10NLv4IntentV4readSbvg,
+                            _$s17SiriReaderIntents0B10NLv4IntentV4readSbvpMV,
+                            _$s17SiriReaderIntents0B10NLv4IntentVMa,
+                            _$s17SiriReaderIntents0B10NLv4IntentVMn,
+                            _$s17SiriReaderIntents0B10NLv4IntentVN,
+                            _$s17SiriReaderIntents0aB12FlowProviderC04findD03for0a3KitD00D12SearchResultVAF5ParseO_tF,
+                            _$s17SiriReaderIntents0aB12FlowProviderC04findD03for0a3KitD00D12SearchResultVAF5ParseO_tFTq,
+                            _$s17SiriReaderIntents0aB12FlowProviderC17referenceResolver17aceServiceInvoker11deviceState15outputPublisherAC0A19ReferenceResolution011RRReferenceG8Protocol_p_0a3KitD003AceiJ5Async_pAJ06DeviceL0_pAJ06OutputnU0_pSgtcfC,
+                            _$s17SiriReaderIntents0aB12FlowProviderC17referenceResolver17aceServiceInvoker11deviceState15outputPublisherAC0A19ReferenceResolution011RRReferenceG8Protocol_p_0a3KitD003AceiJ5Async_pAJ06DeviceL0_pAJ06OutputnU0_pSgtcfCTq,
+                            _$s17SiriReaderIntents0aB12FlowProviderC17referenceResolver17aceServiceInvoker11deviceState15outputPublisherAC0A19ReferenceResolution011RRReferenceG8Protocol_p_0a3KitD003AceiJ5Async_pAJ06DeviceL0_pAJ06OutputnU0_pSgtcfc,
+                            _$s17SiriReaderIntents0aB12FlowProviderCMa,
+                            _$s17SiriReaderIntents0aB12FlowProviderCMm,
+                            _$s17SiriReaderIntents0aB12FlowProviderCMn,
+                            _$s17SiriReaderIntents0aB12FlowProviderCN,
+                            _$s17SiriReaderIntents0aB12FlowProviderCfD,
+                            _$s17SiriReaderIntents0aB12FlowProviderCfd,
+                            _SiriReaderIntentsVersionNumber,
+                            _SiriReaderIntentsVersionString ]
+...

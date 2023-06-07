@@ -1,0 +1,70 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AutoFillUI.framework/AutoFillUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AFKeyboardTypeIsNumberPad,
+                            _AFTextContentTypeCreditCardExpirationMonthStaging,
+                            _AFTextContentTypeCreditCardExpirationStaging,
+                            _AFTextContentTypeCreditCardExpirationYearStaging,
+                            _AFTextContentTypeCreditCardFamilyNameStaging,
+                            _AFTextContentTypeCreditCardGivenNameStaging,
+                            _AFTextContentTypeCreditCardMiddleNameStaging,
+                            _AFTextContentTypeCreditCardNameStaging,
+                            _AFTextContentTypeCreditCardSecurityCodeStaging,
+                            _AFTextContentTypeCreditCardTypeStaging,
+                            _AFTextContentTypeExpectsNumberPads,
+                            _AFTextContentTypeIsInAddressSet,
+                            _AFTextContentTypeIsInContactSet,
+                            _AFTextContentTypeIsInCreditCardSet,
+                            _AFTextContentTypeIsInNameSet,
+                            _AFTextContentTypeIsInPhoneSet,
+                            _AFTextContentTypeNewPasswordStaging,
+                            _AFTextContentTypeOneTimeCodeStaging,
+                            _AFTextContentTypePasswordStaging,
+                            _AFTextContentTypeTelephoneAreaCodeStaging,
+                            _AFTextContentTypeTelephoneCountryCodeStaging,
+                            _AFTextContentTypeTelephoneExtensionStaging,
+                            _AFTextContentTypeTelephoneLocalNumberStaging,
+                            _AFTextContentTypeTelephoneNationalNumberStaging,
+                            _AFUIAutoFillASPOptInKey,
+                            _AFUIAutoFillContactHeuristicsKey,
+                            _AFUIAutoFillContextDelegateKey,
+                            _AFUIAutoFillContextKey,
+                            _AFUIAutoFillPossibleRespondersKey,
+                            _AFUIAutoFillUUIDKey, _AFUICanDisplayAllSuggestions,
+                            _AFUICopyValueForEntitlementFromSelf,
+                            _AFUIIsAppleApp, _AFUIPreferredSubtitleOrder,
+                            _AFUISelfTaskHasEntitlement,
+                            _AFUIServiceDelegateOSLogFacility,
+                            _AFUSAutoFillUIService_BSDomain,
+                            _AFUSAutoFillUIService_BSServiceName,
+                            _AutoFillUIVersionNumber, _AutoFillUIVersionString,
+                            __AFUIApplicationClass, __AFUIButtonClass,
+                            __AFUICacheRuntimeObjects, __AFUIColorClass,
+                            __AFUIFontClass, __AFUINavigationControllerClass,
+                            __AFUIResponderClass, __AFUISecureTextFieldClass,
+                            __AFUITaskHasEntitlement, __AFUITextFieldClass,
+                            __AFUITextInputProtocol, __AFUITextViewClass,
+                            __AFUITraitsClass, __AFUITraitsProtocol,
+                            __AFUIUIAppLocalizedStringWithDefaultValue,
+                            __AFUIViewClass, __AFUIViewControllerClass ]
+    objc-classes:         [ AFUIASPCoverView, AFUIAdapter,
+                            AFUIAutoCompleteMappingController,
+                            AFUIAutoFillCreditCardController,
+                            AFUIAutoFillPasswordController,
+                            AFUIAutoFillPopoverController,
+                            AFUIAutofillContactsController, AFUIClientSession,
+                            AFUIContactInfo, AFUIContactsController,
+                            AFUIExplicitAutoFillController, AFUIInputTraits,
+                            AFUIPanel, AFUIPasswordsController,
+                            AFUIServiceDelegate, AFUIServiceListener,
+                            AFUIServiceSession, AFUITargetDetectionController,
+                            _AFUIFakeNavigationController,
+                            _AFUIFakeSecureTextField, _AFUIFakeTraitsClass ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/InstallProgress.framework/InstallProgress
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _IPProgressPhaseForLSInstallPhase,
+                            _LSInstallPhaseForIPProgressPhase ]
+    objc-classes:         [ IPAppState, IPAppStateSource,
+                            IPGlobalInstallableStateSource,
+                            IPGlobalInstallableStateSourceXPCBehavior,
+                            IPInstallableProgress, IPInstallableProgressData,
+                            IPInstallableProgressSource, IPInstallableState,
+                            IPInstallableStateSource, IPLocalStateUpdateStream,
+                            IPProgressServer, IPProgressServerDefaultBehavior,
+                            IPPublishedIdentityProgress, IPServerXPCTransport ]
+...

@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ContextualUnderstanding.framework/ContextualUnderstanding
+current-version:       63.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s23ContextualUnderstanding14EvidenceSystemC5startyyFZ,
+                            _$s23ContextualUnderstanding14EvidenceSystemCACycfC,
+                            _$s23ContextualUnderstanding14EvidenceSystemCACycfc,
+                            _$s23ContextualUnderstanding14EvidenceSystemCMa,
+                            _$s23ContextualUnderstanding14EvidenceSystemCMn,
+                            _$s23ContextualUnderstanding14EvidenceSystemCMo,
+                            _$s23ContextualUnderstanding14EvidenceSystemCN,
+                            _$s23ContextualUnderstanding14EvidenceSystemCfD,
+                            _$s23ContextualUnderstanding15InferenceEngineC5startyyFZ,
+                            _$s23ContextualUnderstanding15InferenceEngineCACycfC,
+                            _$s23ContextualUnderstanding15InferenceEngineCACycfc,
+                            _$s23ContextualUnderstanding15InferenceEngineCMa,
+                            _$s23ContextualUnderstanding15InferenceEngineCMn,
+                            _$s23ContextualUnderstanding15InferenceEngineCMo,
+                            _$s23ContextualUnderstanding15InferenceEngineCN,
+                            _$s23ContextualUnderstanding15InferenceEngineCfD,
+                            _$s23ContextualUnderstanding23SocialContextStreamUtilOMa,
+                            _$s23ContextualUnderstanding23SocialContextStreamUtilOMn,
+                            _$s23ContextualUnderstanding23SocialContextStreamUtilON,
+                            _ContextualUnderstandingVersionNumber,
+                            _ContextualUnderstandingVersionString ]
+    objc-classes:         [ CUEvidenceSystem, CUObjCEvidenceSystem,
+                            CUObjCInferenceEngine,
+                            _TtC23ContextualUnderstanding15InferenceEngine ]
+...

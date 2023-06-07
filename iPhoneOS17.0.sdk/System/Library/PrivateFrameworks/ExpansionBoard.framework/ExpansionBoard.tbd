@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ExpansionBoard.framework/ExpansionBoard
+current-version:       9
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _EXBCADifferenceMaskCalculate,
+                            _EXBCADisplayDifferenceMaskDescription,
+                            _EXBCADisplayDifferenceMaskHasDifference,
+                            _EXBDisplayCloneMirroringModeDescription,
+                            _EXBDisplayDriverDisplayConnected,
+                            _EXBDisplayDriverDisplayTransformed,
+                            _EXBDisplayDriverProfileAdded,
+                            _EXBDisplayPriorityHighest,
+                            _EXBDisplayPriorityInternalMirroring,
+                            _EXBDisplayPriorityInvalid,
+                            _EXBDisplayPriorityLowest, _EXBLogDisplayAssertions,
+                            _EXBLogDisplayControlling, _EXBLogDisplayMonitor,
+                            _EXBLogDisplayTransforming, _EXBLogRootDisplayDriver,
+                            __EXBDisplayControllerLoggingProem,
+                            __EXBLoggingMethodProem, __EXBPreventIdleSleepReason ]
+    objc-classes:         [ EXBDisplayArrangementItem, EXBDisplayAssertion,
+                            EXBDisplayAssertionCoordinator,
+                            EXBDisplayAssertionCoordinatorPolicy,
+                            EXBDisplayAssertionPreferences,
+                            EXBDisplayDriverRecord,
+                            EXBDisplayEndpointClientComponent,
+                            EXBDisplayEndpointHostComponent, EXBDisplayMonitor,
+                            EXBDisplayProfile, EXBDisplayProfileBuilder,
+                            EXBDisplayProfileRegistry, EXBDisplaySource,
+                            EXBDisplayTransformDescriptor,
+                            EXBExpansionBoardExtension,
+                            EXBMirroredDisplayController,
+                            EXBMirroredDisplayControllerProvider,
+                            EXBMutableDisplayTransformDescriptor,
+                            EXBNullDisplayController,
+                            EXBNullDisplayControllerProvider,
+                            EXBNullDisplaySource, EXBNullTransformerRegistry,
+                            EXBRootDisplayDriver,
+                            EXBRootWindowScenePresentationBinder,
+                            EXBSceneHostingDisplayController,
+                            EXBSceneHostingDisplayControllerProvider,
+                            EXBSeededDisplayConfigurationBuilder,
+                            _EXBDisplayAssertionStack ]
+...

@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AskTo.framework/AskTo
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    re-exports:           [ /System/Library/PrivateFrameworks/AskToCore.framework/AskToCore ]
+    symbols:              [ _$s5AskTo16ATDispatchCenterC19addResponseListeneryyAA010ATResponseG0_pF,
+                            _$s5AskTo16ATDispatchCenterC22removeResponseListeneryyAA010ATResponseG0_pF,
+                            _$s5AskTo16ATDispatchCenterC4send_2to031destinationsNotSupportingLegacyA11ViaMessagesyAA10ATQuestionC_AA16ATRecipientGroupOSaySSGSgztYaKF,
+                            _$s5AskTo16ATDispatchCenterC4send_2to031destinationsNotSupportingLegacyA11ViaMessagesyAA10ATQuestionC_AA16ATRecipientGroupOSaySSGSgztYaKFTu,
+                            _$s5AskTo16ATDispatchCenterC4send_2toyAA10ATQuestionC_AA16ATRecipientGroupOtYaKF,
+                            _$s5AskTo16ATDispatchCenterC4send_2toyAA10ATQuestionC_AA16ATRecipientGroupOtYaKFTu,
+                            _$s5AskTo16ATDispatchCenterC6sharedACvgZ,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorO06daemonF0yAEs0F0_p_tcAEmFWC,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorO15invalidQuestionyA2EmFWC,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorO7unknownyA2EmFWC,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorOMa,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorOMn,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorON,
+                            _$s5AskTo16ATDispatchCenterC9SendErrorOs0F0AAMc,
+                            _$s5AskTo16ATDispatchCenterCACycfC,
+                            _$s5AskTo16ATDispatchCenterCACycfc,
+                            _$s5AskTo16ATDispatchCenterCMa,
+                            _$s5AskTo16ATDispatchCenterCMn,
+                            _$s5AskTo16ATDispatchCenterCMo,
+                            _$s5AskTo16ATDispatchCenterCMu,
+                            _$s5AskTo16ATDispatchCenterCN,
+                            _$s5AskTo16ATDispatchCenterCfD, _AskToVersionNumber,
+                            _AskToVersionString ]
+    objc-classes:         [ _TtC5AskTo16ATDispatchCenter ]
+...

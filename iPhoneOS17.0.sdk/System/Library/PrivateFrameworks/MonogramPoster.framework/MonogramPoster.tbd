@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MonogramPoster.framework/MonogramPoster
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s14MonogramPoster0aB11UserInfoKeyO18dataRepresentationyA2CmFWC,
+                            _$s14MonogramPoster0aB11UserInfoKeyO26backgroundColorDescriptionyA2CmFWC,
+                            _$s14MonogramPoster0aB11UserInfoKeyO8rawValueACSgSS_tcfC,
+                            _$s14MonogramPoster0aB11UserInfoKeyO8rawValueSSvg,
+                            _$s14MonogramPoster0aB11UserInfoKeyO8rawValueSSvpMV,
+                            _$s14MonogramPoster0aB11UserInfoKeyOMa,
+                            _$s14MonogramPoster0aB11UserInfoKeyOMn,
+                            _$s14MonogramPoster0aB11UserInfoKeyON,
+                            _$s14MonogramPoster0aB11UserInfoKeyOSHAAMc,
+                            _$s14MonogramPoster0aB11UserInfoKeyOSQAAMc,
+                            _$s14MonogramPoster0aB11UserInfoKeyOSYAAMc,
+                            _$s14MonogramPoster0aB13ConfigurationV15backgroundColor8initialsACSo7UIColorC_SStcfC,
+                            _$s14MonogramPoster0aB13ConfigurationV26backgroundColorDescriptionSDySS12CoreGraphics7CGFloatVGvM,
+                            _$s14MonogramPoster0aB13ConfigurationV26backgroundColorDescriptionSDySS12CoreGraphics7CGFloatVGvg,
+                            _$s14MonogramPoster0aB13ConfigurationV26backgroundColorDescriptionSDySS12CoreGraphics7CGFloatVGvpMV,
+                            _$s14MonogramPoster0aB13ConfigurationV26backgroundColorDescriptionSDySS12CoreGraphics7CGFloatVGvs,
+                            _$s14MonogramPoster0aB13ConfigurationV2eeoiySbAC_ACtFZ,
+                            _$s14MonogramPoster0aB13ConfigurationV4fromACs7Decoder_p_tKcfC,
+                            _$s14MonogramPoster0aB13ConfigurationV6encode2toys7Encoder_p_tKF,
+                            _$s14MonogramPoster0aB13ConfigurationV8initialsSSvM,
+                            _$s14MonogramPoster0aB13ConfigurationV8initialsSSvg,
+                            _$s14MonogramPoster0aB13ConfigurationV8initialsSSvpMV,
+                            _$s14MonogramPoster0aB13ConfigurationV8initialsSSvs,
+                            _$s14MonogramPoster0aB13ConfigurationVMa,
+                            _$s14MonogramPoster0aB13ConfigurationVMn,
+                            _$s14MonogramPoster0aB13ConfigurationVN,
+                            _$s14MonogramPoster0aB13ConfigurationVSEAAMc,
+                            _$s14MonogramPoster0aB13ConfigurationVSQAAMc,
+                            _$s14MonogramPoster0aB13ConfigurationVSeAAMc,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO3redyA2CmFWC,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO4blueyA2CmFWC,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO5alphayA2CmFWC,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO5greenyA2CmFWC,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO8rawValueACSgSS_tcfC,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO8rawValueSSvg,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyO8rawValueSSvpMV,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyOMa,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyOMn,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyON,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyOSHAAMc,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyOSQAAMc,
+                            _$s14MonogramPoster0aB19ColorDescriptionKeyOSYAAMc,
+                            _$sSo7UIColorC14MonogramPosterE24monogramColorDescriptionABSDySS12CoreGraphics7CGFloatVG_tcfC,
+                            _$sSo7UIColorC14MonogramPosterE24monogramColorDescriptionSDySS12CoreGraphics7CGFloatVGvg,
+                            _$sSo7UIColorC14MonogramPosterE24monogramColorDescriptionSDySS12CoreGraphics7CGFloatVGvpMV,
+                            _MonogramPosterVersionNumber,
+                            _MonogramPosterVersionString ]
+...

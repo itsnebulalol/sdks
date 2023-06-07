@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/LocalAuthenticationEmbeddedUI
+current-version:       1351
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LACustomPasswordTypeAlphanumeric,
+                            _LACustomPasswordTypeCustomDigits,
+                            _LACustomPasswordTypeFourDigits,
+                            _LACustomPasswordTypeSixDigits,
+                            _LAPasscodeRecoveryErrorClientCanceled,
+                            _LAPasscodeRecoveryErrorDomain,
+                            _LAPasscodeRecoveryErrorGeneric,
+                            _LAPasscodeRecoveryErrorTooManyAttempts,
+                            _LAPasscodeRecoveryErrorUserCanceled ]
+    objc-classes:         [ LAContextUITrampoline, LACustomPasswordController,
+                            LACustomPasswordControllerConfiguration,
+                            LACustomPasswordControllerStyle,
+                            LAPasscodeChangeService,
+                            LAPasscodeChangeServiceOptions,
+                            LAPasscodeRecoveryService ]
+...

@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleCareSupport.framework/AppleCareSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s16AppleCareSupport21BatteryServiceOptionsC6valuesACSDySSypG_tcfC,
+                            _$s16AppleCareSupport21BatteryServiceOptionsC6valuesACSDySSypG_tcfCTj,
+                            _$s16AppleCareSupport21BatteryServiceOptionsC6valuesACSDySSypG_tcfCTq,
+                            _$s16AppleCareSupport21BatteryServiceOptionsC6valuesACSDySSypG_tcfc,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCACycfC,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCACycfc,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCMa,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCMn,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCMo,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCMu,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCN,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCfD,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCyypSgSScigTj,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCyypSgSScigTq,
+                            _$s16AppleCareSupport21BatteryServiceOptionsCyypSgSScipMV,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC06launchdeF4FlowyyYaKFTj,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC06launchdeF4FlowyyYaKFTjTu,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC06launchdeF4FlowyyYaKFTq,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC07preparedeF4FlowyyYaKFTj,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC07preparedeF4FlowyyYaKFTjTu,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC07preparedeF4FlowyyYaKFTq,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC15unownedExecutorScevg,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC15unownedExecutorScevpMV,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC7optionsAcA0dE7OptionsC_tcfC,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorC7optionsAcA0dE7OptionsC_tcfc,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCACycfC,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCACycfc,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCMa,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCMn,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCMo,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCMu,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCN,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCScAAAMc,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCfD,
+                            _$s16AppleCareSupport32BatteryServiceBookingCoordinatorCfd,
+                            _$ss5ClockP16AppleCareSupportE29measureInheritingActorContexty8DurationQzyyYaYbKXEYaKF,
+                            _$ss5ClockP16AppleCareSupportE29measureInheritingActorContexty8DurationQzyyYaYbKXEYaKFTu,
+                            _AppleCareSupportVersionNumber,
+                            _AppleCareSupportVersionString,
+                            _kACSBatteryServiceOptionsServiceStateKey ]
+    objc-classes:         [ ACSBatteryServiceBookingCoordinator,
+                            _ACSBatteryServiceBookingCoordinator,
+                            _ACSBatteryServiceOptions ]
+...

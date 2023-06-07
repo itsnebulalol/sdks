@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MentalHealthWidgetUI.framework/MentalHealthWidgetUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s20MentalHealthWidgetUI0aB20LauncherComplicationV05SwiftD00C0AAMc,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationV4bodyQrvg,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationV4bodyQrvpMV,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationV4bodyQrvpQOMQ,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationVACycfC,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationVMa,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationVMn,
+                            _$s20MentalHealthWidgetUI0aB20LauncherComplicationVN,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewV010overriddenC6FamilyAC0C3Kit0cI0OSg_tcfC,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewV05SwiftD00G0AAMc,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewV4bodyQrvg,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewV4bodyQrvpMV,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewV4bodyQrvpQOMQ,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewVMa,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewVMn,
+                            _$s20MentalHealthWidgetUI0aB24LauncherComplicationViewVN ]
+...

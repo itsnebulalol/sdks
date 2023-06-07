@@ -1,0 +1,34 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriAudioSnippetUI.framework/SiriAudioSnippetUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s18SiriAudioSnippetUI012ConfirmationC0V05SwiftD04ViewAAMc,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0V4bodyQrvg,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0V4bodyQrvpMV,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0V4bodyQrvpQOMQ,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0V5modelAC0abC3Kit0abeC5ModelV_tcfC,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0V8_context33_05675CBE442C29B2DBF79589BD505D85LL05SwiftD017EnvironmentObjectVy0cD07ContextCGvpfi,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0VMa,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0VMn,
+                            _$s18SiriAudioSnippetUI012ConfirmationC0VN,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V05SwiftD04ViewAAMc,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V4bodyQrvg,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V4bodyQrvpMV,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V4bodyQrvpQOMQ,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V5modelAC0abC3Kit0abefC5ModelV_tcfC,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0V8_context33_00ED138FFED85ADB29F1756E43732969LL05SwiftD017EnvironmentObjectVy0cD07ContextCGvpfi,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0VMa,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0VMn,
+                            _$s18SiriAudioSnippetUI0ab12ActionButtonC0VN,
+                            _$s19SiriAudioSnippetKit0aB8SnippetsO0abC2UIE13snippetHidden3for5idiomSb0A9Utilities12ResponseModeV_AH11DeviceIdiomOtF,
+                            _$s19SiriAudioSnippetKit0aB8SnippetsO0abC2UIE7snippet05SwiftF07AnyViewVvg,
+                            _$s19SiriAudioSnippetKit0aB8SnippetsO0abC2UIE7snippet05SwiftF07AnyViewVvpMV,
+                            _SiriAudioSnippetUIVersionNumber,
+                            _SiriAudioSnippetUIVersionString ]
+...

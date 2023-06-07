@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TranslationDaemon.framework/TranslationDaemon
+current-version:       233.2
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _LTActivityLogger, _LTCombinedEngine, _LTDDaemon,
+                            _LTDSELFBatchLog, _LTDSELFLoggingFrameworkObservers,
+                            _LTDSELFLoggingManager, _LTLanguageDetector,
+                            _LTLanguageDetectorFeatureCombinationModel,
+                            _LTLanguageManager, _LTOfflineTranslationEngine,
+                            _LTSpeechTranslationResultsBuffer,
+                            _LTTextLanguageDetector ]
+...

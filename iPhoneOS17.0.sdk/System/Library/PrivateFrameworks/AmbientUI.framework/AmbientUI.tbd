@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AmbientUI.framework/AmbientUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AMUIAmbientUIFrameworkBundle,
+                            _AMUIAppLaunchOriginAmbient, _AMUILogDataLayer,
+                            _AMUILogEditingSwitcher, _AMUILogGeneral,
+                            _AMUILogInfograph, _AMUILogProactive, _AMUILogSwitcher,
+                            _AMUILogWidgets, _AMUILoggingSubsystem,
+                            _AMUIPowerStatusForBatteryState,
+                            _AMUIRingColorForPowerStatus,
+                            _AMUIRingPowerStatusForBatteryState,
+                            _AmbientUIVersionNumber, _AmbientUIVersionString ]
+    objc-classes:         [ AMUIAmbientViewController,
+                            AMUIBatteryChargingRingView,
+                            AMUIBatteryChargingUIConfiguration,
+                            AMUIBatteryChargingView,
+                            AMUIBatteryChargingViewController,
+                            AMUIConcreteUnlockRequest,
+                            AMUIDataLayerViewController,
+                            AMUIDateTimeDataLayerViewController,
+                            AMUIDateTimeView, AMUIDateTimeViewController,
+                            AMUIDefaultDateProvider,
+                            AMUIDefaultSelectedPosterCoordinator,
+                            AMUIIconModelStore, AMUIInfographIconListLayout,
+                            AMUIInfographListLayoutProvider,
+                            AMUIInfographMultipleAssertion,
+                            AMUIInfographViewController,
+                            AMUIInlineAuthenticationViewController,
+                            AMUINotificationIndicatorView,
+                            AMUIOnboardingContainerView, AMUIOnboardingView,
+                            AMUIOnboardingViewController, AMUIPasscodeButton,
+                            AMUIPhotosLabelView,
+                            AMUIPosterAppearanceTransitionCoordinator,
+                            AMUIPosterCategorySwitcherItem,
+                            AMUIPosterCategoryViewController,
+                            AMUIPosterEditingSwitcherViewController,
+                            AMUIPosterExtensionSwitcherItem,
+                            AMUIPosterPhotosAppearanceTransitionCoordinator,
+                            AMUIPosterSwitcherDomain, AMUIPosterSwitcherModel,
+                            AMUIPosterSwitcherSettings,
+                            AMUIPosterSwitcherViewController, AMUIPosterUpdater,
+                            AMUIPosterViewController, AMUIPowerStatus,
+                            AMUIProactiveSuggestionsProvider,
+                            AMUIProactiveUsageObserver, AMUIRingLayer,
+                            AMUISwitcherViewController, AMUITouchPassthroughView,
+                            AMUIWidgetHostManager, _AMUIPosterUpdate,
+                            _AMUISwitcherTransitionContext,
+                            _AMUISwitcherVisibleItemRecord ]
+...

@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/AVKit.framework/AVKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AVKitErrorDomain,
+                            _AVKitMetadataIdentifierAlternateSubTitle,
+                            _AVKitMetadataIdentifierApproximateEndDate,
+                            _AVKitMetadataIdentifierApproximateStartDate,
+                            _AVKitMetadataIdentifierBrandIdentifier,
+                            _AVKitMetadataIdentifierEpisodeNumber,
+                            _AVKitMetadataIdentifierExactEndDate,
+                            _AVKitMetadataIdentifierExactStartDate,
+                            _AVKitMetadataIdentifierExternalContentIdentifier,
+                            _AVKitMetadataIdentifierExternalUserProfileIdentifier,
+                            _AVKitMetadataIdentifierPlaybackProgress,
+                            _AVKitMetadataIdentifierRottenTomatoesFreshness,
+                            _AVKitMetadataIdentifierRottenTomatoesRating,
+                            _AVKitMetadataIdentifierSeasonNumber,
+                            _AVKitMetadataIdentifierServiceIdentifier,
+                            _AVKitMetadataIdentifieriTunesStoreIdentifier,
+                            _AVPictureInPictureControllerContentSourceKey,
+                            _AVPictureInPictureControllerDidStartNotification,
+                            _AVPictureInPictureControllerDidStopNotification,
+                            _AVPictureInPictureControllerPlaybackStateDidChangeNotification,
+                            _AVPictureInPictureControllerPlaybackStateIsPlayingKey,
+                            _AVPictureInPictureControllerWillStartNotification,
+                            _AVPictureInPictureControllerWillStopNotification,
+                            _AVPlayerItemAVKitDataDidChangeNotification ]
+    objc-classes:         [ AVAppStoreBehavior, AVAppStoreBehaviorContext,
+                            AVAppStorePlayerView, AVBackgroundView, AVChapter,
+                            AVControlItem, AVEditBehavior, AVEditBehaviorContext,
+                            AVExternalPlaybackController, AVHomeIPCameraBehavior,
+                            AVHomeIPCameraBehaviorContext,
+                            AVHomeLoadingButtonControlItem,
+                            AVInterstitialTimeRange, AVKeyValueChange,
+                            AVMediaSelectionViewController, AVMusicAppBehavior,
+                            AVMusicAppBehaviorContext, AVMutableValueTiming,
+                            AVNewsWidgetPlayerBehavior,
+                            AVNewsWidgetPlayerBehaviorContext,
+                            AVObservationController,
+                            AVPictureInPictureContentViewController,
+                            AVPictureInPictureController,
+                            AVPictureInPictureControllerContentSource,
+                            AVPictureInPictureIndicatorView,
+                            AVPictureInPicturePlayerLayerView,
+                            AVPictureInPicturePrerollAttributes,
+                            AVPictureInPictureVideoCallViewController,
+                            AVPlaybackRate, AVPlaybackRateCollection,
+                            AVPlaybackSpeed, AVPlaybackSpeedCollection,
+                            AVPlayerController, AVPlayerControllerTimeResolver,
+                            AVPlayerViewController,
+                            AVPlayerViewControllerConfiguration,
+                            AVPlayerViewControllerCustomControlsView,
+                            AVRoutePickerView, AVSeymourBehavior,
+                            AVSeymourBehaviorContext, AVTimecode,
+                            AVTimecodeController, AVTimer, AVValueTiming,
+                            __AVPlayerLayerView ]
+...

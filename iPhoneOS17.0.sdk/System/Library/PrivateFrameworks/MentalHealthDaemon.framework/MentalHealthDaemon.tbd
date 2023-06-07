@@ -1,0 +1,60 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MentalHealthDaemon.framework/MentalHealthDaemon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s18MentalHealthDaemon0aB17DemoDataGeneratorC03setdE21GenerationContextWith_14generatorStateySo9HDProfileC_So06HDDemoefL0CtFTj,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC03setdE21GenerationContextWith_14generatorStateySo9HDProfileC_So06HDDemoefL0CtFTq,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC15generateObjects03forD6Person8fromTime02toL011currentDate16objectCollectionySo06HDDemoeJ0C_S2d10Foundation0O0VSo0re10BaseSamplef6ObjectQ0CtFTj,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC15generateObjects03forD6Person8fromTime02toL011currentDate16objectCollectionySo06HDDemoeJ0C_S2d10Foundation0O0VSo0re10BaseSamplef6ObjectQ0CtFTq,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC20supportsSecureCodingSbvgZ,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC23generateFirstRunObjects03forD6Person9firstDate16objectCollectionySo06HDDemoeL0C_10Foundation0N0VSo0qe10BaseSamplef6ObjectP0CtFTj,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC23generateFirstRunObjects03forD6Person9firstDate16objectCollectionySo06HDDemoeL0C_10Foundation0N0VSo0qe10BaseSamplef6ObjectP0CtFTq,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC5coderACSgSo7NSCoderC_tcfC,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC5coderACSgSo7NSCoderC_tcfCTj,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC5coderACSgSo7NSCoderC_tcfCTq,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC5coderACSgSo7NSCoderC_tcfc,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC6encode4withySo7NSCoderC_tFTj,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorC6encode4withySo7NSCoderC_tFTq,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCMa,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCMn,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCMo,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCMu,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCN,
+                            _$s18MentalHealthDaemon0aB17DemoDataGeneratorCfD,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC03seteF21GenerationContextWith_14generatorStateySo9HDProfileC_So06HDDemofgM0CtFTj,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC03seteF21GenerationContextWith_14generatorStateySo9HDProfileC_So06HDDemofgM0CtFTq,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC15generateObjects03forE6Person8fromTime02toM011currentDate16objectCollectionySo06HDDemofK0C_S2d10Foundation0P0VSo0sf10BaseSampleg6ObjectR0CtFTj,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC15generateObjects03forE6Person8fromTime02toM011currentDate16objectCollectionySo06HDDemofK0C_S2d10Foundation0P0VSo0sf10BaseSampleg6ObjectR0CtFTq,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC20supportsSecureCodingSbvgZ,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC23generateFirstRunObjects03forE6Person9firstDate16objectCollectionySo06HDDemofM0C_10Foundation0O0VSo0rf10BaseSampleg6ObjectQ0CtFTj,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC23generateFirstRunObjects03forE6Person9firstDate16objectCollectionySo06HDDemofM0C_10Foundation0O0VSo0rf10BaseSampleg6ObjectQ0CtFTq,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC5coderACSgSo7NSCoderC_tcfC,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC5coderACSgSo7NSCoderC_tcfCTj,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC5coderACSgSo7NSCoderC_tcfCTq,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC5coderACSgSo7NSCoderC_tcfc,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC6encode4withySo7NSCoderC_tFTj,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorC6encode4withySo7NSCoderC_tFTq,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCMa,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCMn,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCMo,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCMu,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCN,
+                            _$s18MentalHealthDaemon0aB28AssessmentsDemoDataGeneratorCfD ]
+    objc-classes:         [ HDMHDaySummaryEnumerator, HDMHLoggingPatternDetector,
+                            HDMHLoggingPatternEscalationsManager,
+                            HDMHMentalHealthDailyAnalyticsEvent,
+                            HDMHMostPrevalentDomainsBuilder, HDMHNotification,
+                            HDMHPeriodicPromptedAssessmentsManager,
+                            HDMHPromptedAssessmentsManager,
+                            HDMHTypicalDayProvider,
+                            HDMHValenceDistributionSummaryBuilder,
+                            HDMentalHealthPlugin,
+                            _TtC18MentalHealthDaemon29MentalHealthDemoDataGenerator,
+                            _TtC18MentalHealthDaemon40MentalHealthAssessmentsDemoDataGenerator ]
+...

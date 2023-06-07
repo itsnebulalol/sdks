@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DebugHierarchyKit.framework/DebugHierarchyKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DBGValueClassForPropertyWith,
+                            _DebugHierarchyKitVersionNumber,
+                            _DebugHierarchyKitVersionString,
+                            __DBGDictionaryDescribesDebugHierarchyObjectReference ]
+    objc-classes:         [ DBGAttributedString, DBGBool, DBGCGFloat, DBGClass,
+                            DBGColor, DBGCustomValue, DBGData, DBGDataCoordinator,
+                            DBGDataCoordinatorOnDiskTargetHub,
+                            DBGDataCoordinatorTargetHub,
+                            DBGDataSourceConnectionDocument, DBGDouble,
+                            DBGEnumValue, DBGFloat, DBGFont, DBGImage, DBGInsets, DBGInt,
+                            DBGInteger, DBGLocalDataSourceConnection, DBGLong,
+                            DBGLongLong, DBGMatrix2, DBGMatrix3, DBGMatrix4,
+                            DBGObjectInfo, DBGObjectPointer, DBGOffset, DBGPoint,
+                            DBGRect, DBGSize, DBGSnapshot, DBGSnapshotAssetManager,
+                            DBGSnapshotGroup, DBGSnapshotManager, DBGSnapshotNode,
+                            DBGSnapshotProperty, DBGSnapshotPropertyGroup,
+                            DBGString, DBGUnsignedInt, DBGUnsignedInteger,
+                            DBGUnsignedLong, DBGUnsignedLongLong, DBGVector2,
+                            DBGVector3, DBGVector4, RequestFactory,
+                            ViewHierarchyService ]
+...

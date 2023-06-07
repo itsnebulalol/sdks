@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WorkflowUIServices.framework/WorkflowUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s18WorkflowUIServices25ShortcutIndexedSearchViewV10descriptorACSo20WFWorkflowDescriptorC_tcfC,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV19_AppIntents_SwiftUI06ShareddF0AAMc,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvg,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvpMV,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvpQOMQ,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV4fromACs7Decoder_p_tKcfC,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV6encode2toys7Encoder_p_tKF,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewV7SwiftUI0F0AAMc,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewVMa,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewVMn,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewVN,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewVSEAAMc,
+                            _$s18WorkflowUIServices25ShortcutIndexedSearchViewVSeAAMc,
+                            _WFCGColorIsPerceivedLight,
+                            _WFCGColorPerceivedLightness,
+                            _WFCreateShortcutsSmallWidgetConfigurationIntent,
+                            _WFCreateShortcutsWidgetConfigurationIntent,
+                            _WFFocusConfigurationHostXPCInterface,
+                            _WFFocusConfigurationServiceXPCInterface,
+                            _WFLogCategoryFocusConfiguration,
+                            _WFPlaceholderMyShortcutsCacheKey,
+                            _WFWidgetColorsFromBundle,
+                            _WFWidgetConfigurationHostXPCInterface,
+                            _WFWidgetConfigurationServiceXPCInterface,
+                            _WFWidgetGetDefaultColors,
+                            _getWFFocusConfigurationLogObject ]
+    objc-classes:         [ WFAppIconColorMatcher, WFFloatingButton,
+                            WFFloatingButtonConfiguration, WFFloatingLayer,
+                            WFFloatingView, WFFloatingViewConfiguration,
+                            WFFocusConfigurationButton,
+                            WFFocusConfigurationContextualActionOptions,
+                            WFFocusConfigurationOptions,
+                            WFFocusConfigurationRequest,
+                            WFFocusConfigurationUIState,
+                            WFFocusConfigurationViewController,
+                            WFHomeWorkflowEditorViewController, WFIconStackView,
+                            WFJoeColorUtility, WFMatchedAppIconColorData,
+                            WFWidgetConfigurationCardContainerViewController,
+                            WFWidgetConfigurationCardView,
+                            WFWidgetConfigurationContainerView,
+                            WFWidgetConfigurationContainerViewController,
+                            WFWidgetConfigurationOptions,
+                            WFWidgetConfigurationRequest,
+                            WFWidgetConfigurationResponse,
+                            WFWidgetConfigurationView,
+                            WFWidgetConfigurationViewController, WFWidgetOptions,
+                            WFWidgetViewController, WFWorkflowProgressView ]
+...

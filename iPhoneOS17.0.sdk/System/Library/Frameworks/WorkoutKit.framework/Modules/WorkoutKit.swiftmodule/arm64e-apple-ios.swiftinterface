@@ -1,0 +1,408 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.111.22 clang-1500.0.21.3)
+// swift-module-flags: -target arm64e-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -library-level api -module-name WorkoutKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex -user-module-version 704.1.2
+import Foundation
+import HealthKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 17.0, watchOS 10.0, *)
+extension HealthKit.HKWorkout {
+  #if compiler(>=5.3) && $EffectfulProp
+  public var composition: WorkoutKit.WorkoutComposition? {
+    get async throws
+  }
+  #endif
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct BlockStep : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public enum StepType : Swift.Sendable {
+    case work
+    case rest
+    public static func == (a: WorkoutKit.BlockStep.StepType, b: WorkoutKit.BlockStep.StepType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var type: WorkoutKit.BlockStep.StepType
+  public var goal: WorkoutKit.WorkoutGoal?
+  public var alert: WorkoutKit.WorkoutAlert?
+  public init(_ type: WorkoutKit.BlockStep.StepType, goal: WorkoutKit.WorkoutGoal? = nil, alert: WorkoutKit.WorkoutAlert? = nil)
+  public static func == (lhs: WorkoutKit.BlockStep, rhs: WorkoutKit.BlockStep) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct CustomWorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var activity: HealthKit.HKWorkoutActivityType {
+    get
+  }
+  public func setActivity(_ activity: HealthKit.HKWorkoutActivityType) throws
+  public var location: HealthKit.HKWorkoutSessionLocationType? {
+    get
+    set
+  }
+  public var displayName: Swift.String?
+  public var warmup: WorkoutKit.WarmupStep?
+  public var blocks: [WorkoutKit.IntervalBlock]
+  public var cooldown: WorkoutKit.CooldownStep?
+  public init(activity: HealthKit.HKWorkoutActivityType, location: HealthKit.HKWorkoutSessionLocationType? = nil, displayName: Swift.String? = nil, warmup: WorkoutKit.WarmupStep? = nil, blocks: [WorkoutKit.IntervalBlock] = [], cooldown: WorkoutKit.CooldownStep? = nil) throws
+  public static func == (a: WorkoutKit.CustomWorkoutComposition, b: WorkoutKit.CustomWorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutComposition {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func presentPreview() async throws
+  #endif
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct WorkoutPlan : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public static let maxAllowedScheduledCount: Swift.Int
+  public var scheduledCompositions: [WorkoutKit.ScheduledWorkoutComposition]
+  public init(_ scheduledCompositions: [WorkoutKit.ScheduledWorkoutComposition] = [])
+  #if compiler(>=5.3) && $AsyncAwait
+  public func save() async throws
+  #endif
+  #if compiler(>=5.3) && $EffectfulProp
+  public static var current: WorkoutKit.WorkoutPlan {
+    get async throws
+  }
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func remove() async throws
+  #endif
+  public enum AuthorizationState : Swift.Int {
+    case undetermined
+    case denied
+    case authorized
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum AuthorizationError : Swift.Error {
+    case notAuthorized
+    case failedRetrieveAuthorization
+    public static func == (a: WorkoutKit.WorkoutPlan.AuthorizationError, b: WorkoutKit.WorkoutPlan.AuthorizationError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $EffectfulProp
+  public static var authorizationState: WorkoutKit.WorkoutPlan.AuthorizationState {
+    get async throws
+  }
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func requestAuthorization() async throws -> WorkoutKit.WorkoutPlan.AuthorizationState
+  #endif
+  public static func == (a: WorkoutKit.WorkoutPlan, b: WorkoutKit.WorkoutPlan) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct CooldownStep : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var goal: WorkoutKit.WorkoutGoal?
+  public var alert: WorkoutKit.WorkoutAlert?
+  public init(goal: WorkoutKit.WorkoutGoal? = nil, alert: WorkoutKit.WorkoutAlert? = nil)
+  public static func == (lhs: WorkoutKit.CooldownStep, rhs: WorkoutKit.CooldownStep) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum ImportError : Swift.Error {
+  case unknownType
+  case unexpectedValueType
+  case unrecognizedDataFormat
+  case unsupportedPlatform
+  case unsupportedVersion
+  public static func == (a: WorkoutKit.ImportError, b: WorkoutKit.ImportError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum StateError : Swift.Error {
+  case applicationNotInForeground
+  case unableToLaunchWorkoutApplication
+  case watchNotPaired
+  case workoutApplicationNotInstalled
+  public static func == (a: WorkoutKit.StateError, b: WorkoutKit.StateError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum CompositionValidationError : Swift.Error {
+  case unsupportedActivity(HealthKit.HKWorkoutActivityType)
+  case unsupportedActivityLocation(HealthKit.HKWorkoutActivityType, HealthKit.HKWorkoutSessionLocationType)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum CustomValidationError : Swift.Error {
+  case unsupportedActivity(HealthKit.HKWorkoutActivityType)
+  case unsupportedGoal(WorkoutKit.WorkoutGoal, HealthKit.HKWorkoutActivityType, HealthKit.HKWorkoutSessionLocationType)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum PacerValidationError : Swift.Error {
+  case unsupportedActivity(HealthKit.HKWorkoutActivityType)
+  case unsupportedActivityLocation(HealthKit.HKWorkoutActivityType, HealthKit.HKWorkoutSessionLocationType)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum SwimBikeRunValidationError : Swift.Error {
+  case requiresMoreSubConfigurations(Swift.Int)
+  case repeatedActivities(HealthKit.HKWorkoutActivityType)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum WorkoutPlanValidationError : Swift.Error {
+  case emptyPlan
+  case exceedsMaxAllowedCompositions(Swift.Int)
+  case validationFailure(WorkoutKit.ScheduledWorkoutComposition, any Swift.Error)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum GoalValidationError : Swift.Error {
+  case unsupportedGoal(WorkoutKit.WorkoutGoal, HealthKit.HKWorkoutActivityType, HealthKit.HKWorkoutSessionLocationType)
+  case unsupportedUnit(WorkoutKit.WorkoutGoal, HealthKit.HKUnit)
+  case requiresNonZeroValue(HealthKit.HKQuantity)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum AlertValidationError : Swift.Error {
+  case unsupportedActivity(WorkoutKit.WorkoutAlertType, HealthKit.HKWorkoutActivityType)
+  case unsupportedActivityLocation(WorkoutKit.WorkoutAlertType, HealthKit.HKWorkoutActivityType, HealthKit.HKWorkoutSessionLocationType)
+  case unsupportedAlert(WorkoutKit.WorkoutAlertType)
+  case unsupportedRange(WorkoutKit.WorkoutAlertType, HealthKit.HKQuantity, HealthKit.HKQuantity)
+  case unsupportedTargetType(WorkoutKit.WorkoutAlertType, WorkoutKit.WorkoutTargetType)
+  case unsupportedUnit(WorkoutKit.WorkoutAlertType, HealthKit.HKUnit)
+  case unsupportedZone(WorkoutKit.WorkoutAlertType)
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct ScheduledWorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var workoutComposition: WorkoutKit.WorkoutComposition
+  public var scheduledDate: Foundation.Date
+  public var completed: Swift.Bool {
+    get
+    set
+  }
+  public init(_ workoutComposition: WorkoutKit.WorkoutComposition, scheduledDate: Foundation.Date, completed: Swift.Bool = false)
+  public static func == (a: WorkoutKit.ScheduledWorkoutComposition, b: WorkoutKit.ScheduledWorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum WorkoutAlertType : Swift.Int, Swift.Sendable {
+  case averagePace
+  case currentPace
+  case currentCadence
+  case currentPower
+  case currentHeartRate
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum WorkoutTargetType : Swift.Hashable, Swift.Sendable {
+  case target(value: HealthKit.HKQuantity)
+  case range(min: HealthKit.HKQuantity, max: HealthKit.HKQuantity)
+  case zone(zone: Swift.Int)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: WorkoutKit.WorkoutTargetType, b: WorkoutKit.WorkoutTargetType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct WorkoutAlert : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public let type: WorkoutKit.WorkoutAlertType
+  public let target: WorkoutKit.WorkoutTargetType
+  public init(type: WorkoutKit.WorkoutAlertType, target: WorkoutKit.WorkoutTargetType)
+  public static func == (lhs: WorkoutKit.WorkoutAlert, rhs: WorkoutKit.WorkoutAlert) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum WorkoutGoal : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  case distance(HealthKit.HKQuantity)
+  case time(HealthKit.HKQuantity)
+  case energy(HealthKit.HKQuantity)
+  public static func == (lhs: WorkoutKit.WorkoutGoal, rhs: WorkoutKit.WorkoutGoal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct PacerWorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var activity: HealthKit.HKWorkoutActivityType {
+    get
+  }
+  public func setActivity(_ activity: HealthKit.HKWorkoutActivityType) throws
+  public var location: HealthKit.HKWorkoutSessionLocationType? {
+    get
+  }
+  public func setLocation(_ location: HealthKit.HKWorkoutSessionLocationType?) throws
+  public var distance: HealthKit.HKQuantity {
+    get
+    set
+  }
+  public var time: HealthKit.HKQuantity {
+    get
+    set
+  }
+  public init(activity: HealthKit.HKWorkoutActivityType, location: HealthKit.HKWorkoutSessionLocationType? = nil, distance: HealthKit.HKQuantity, time: HealthKit.HKQuantity) throws
+  public static func == (a: WorkoutKit.PacerWorkoutComposition, b: WorkoutKit.PacerWorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct WarmupStep : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var goal: WorkoutKit.WorkoutGoal?
+  public var alert: WorkoutKit.WorkoutAlert?
+  public init(goal: WorkoutKit.WorkoutGoal? = nil, alert: WorkoutKit.WorkoutAlert? = nil)
+  public static func == (lhs: WorkoutKit.WarmupStep, rhs: WorkoutKit.WarmupStep) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct SwimBikeRunWorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var subConfigurations: [HealthKit.HKWorkoutConfiguration]
+  public var displayName: Swift.String?
+  public init(subConfigurations: [HealthKit.HKWorkoutConfiguration] = [], displayName: Swift.String? = nil)
+  public static func == (a: WorkoutKit.SwimBikeRunWorkoutComposition, b: WorkoutKit.SwimBikeRunWorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct IntervalBlock : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var steps: [WorkoutKit.BlockStep]
+  public var iterations: Swift.Int {
+    get
+    set
+  }
+  public init(steps: [WorkoutKit.BlockStep] = [], iterations: Swift.Int = 1)
+  public static func == (a: WorkoutKit.IntervalBlock, b: WorkoutKit.IntervalBlock) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct GoalWorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public var activity: HealthKit.HKWorkoutActivityType {
+    get
+  }
+  public func setActivity(_ activity: HealthKit.HKWorkoutActivityType) throws
+  public var location: HealthKit.HKWorkoutSessionLocationType? {
+    get
+    set
+  }
+  public var swimmingLocation: HealthKit.HKWorkoutSwimmingLocationType? {
+    get
+    set
+  }
+  public var goal: WorkoutKit.WorkoutGoal? {
+    get
+  }
+  public mutating func setGoal(_ goal: WorkoutKit.WorkoutGoal?) throws
+  public init(activity: HealthKit.HKWorkoutActivityType, location: HealthKit.HKWorkoutSessionLocationType? = nil, swimmingLocation: HealthKit.HKWorkoutSwimmingLocationType? = nil, goal: WorkoutKit.WorkoutGoal? = nil) throws
+  public static func == (a: WorkoutKit.GoalWorkoutComposition, b: WorkoutKit.GoalWorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public enum SerializationFormat : Swift.Int {
+  case compactBinary
+  case jsonUTF8
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+public struct WorkoutComposition : Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  public let goalComposition: WorkoutKit.GoalWorkoutComposition?
+  public let customComposition: WorkoutKit.CustomWorkoutComposition?
+  public let pacerComposition: WorkoutKit.PacerWorkoutComposition?
+  public let swimBikeRunComposition: WorkoutKit.SwimBikeRunWorkoutComposition?
+  public var activity: HealthKit.HKWorkoutActivityType {
+    get
+  }
+  public func validate() throws
+  @available(*, unavailable)
+  public init()
+  public init(goalComposition: WorkoutKit.GoalWorkoutComposition)
+  public init(customComposition: WorkoutKit.CustomWorkoutComposition)
+  public init(pacerComposition: WorkoutKit.PacerWorkoutComposition)
+  public init(swimBikeRunComposition: WorkoutKit.SwimBikeRunWorkoutComposition)
+  public init(from data: Foundation.Data) throws
+  public func dataRepresentation(in format: WorkoutKit.SerializationFormat) throws -> Foundation.Data
+  public static func == (a: WorkoutKit.WorkoutComposition, b: WorkoutKit.WorkoutComposition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.BlockStep.StepType : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.BlockStep.StepType : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutPlan.AuthorizationState : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutPlan.AuthorizationState : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutPlan.AuthorizationState : Swift.RawRepresentable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutPlan.AuthorizationError : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutPlan.AuthorizationError : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.ImportError : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.ImportError : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.StateError : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.StateError : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutAlertType : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutAlertType : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.WorkoutAlertType : Swift.RawRepresentable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.SerializationFormat : Swift.Equatable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.SerializationFormat : Swift.Hashable {}
+@available(iOS 17.0, watchOS 10.0, *)
+extension WorkoutKit.SerializationFormat : Swift.RawRepresentable {}

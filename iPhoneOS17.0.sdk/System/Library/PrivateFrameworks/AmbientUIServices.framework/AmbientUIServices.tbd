@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AmbientUIServices.framework/AmbientUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AMUIAmbientDisplayStyleIsRedMode,
+                            _AMUIAmbientDisplayStyleString,
+                            _AMUIAmbientPresentationStateIsPresented,
+                            _AMUIServicesLogGeneral,
+                            _AMUIServicesLoggingSubsystem,
+                            _AmbientUIServicesVersionNumber,
+                            _AmbientUIServicesVersionString ]
+    objc-classes:         [ AMUIAmbientDisplayStyleTrait,
+                            AMUIAmbientPresentationSceneClientComponent,
+                            AMUIAmbientPresentationSceneExtension,
+                            AMUIAmbientPresentationSettingsExtension,
+                            AMUIAmbientPresentationStateTrait ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FindMyCommon.framework/FindMyCommon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s12FindMyCommon14ReferenceClockO12timeIntervalSdvgZ,
+                            _$s12FindMyCommon14ReferenceClockO14calibrationAgeSdvgZ,
+                            _$s12FindMyCommon14ReferenceClockO3now10Foundation4DateVvgZ,
+                            _$s12FindMyCommon14ReferenceClockO7convert02toD0S2d_tFZ,
+                            _$s12FindMyCommon14ReferenceClockO7convert8toSystemS2d_tFZ,
+                            _$s12FindMyCommon14ReferenceClockO9calibrateyyFZ,
+                            _$s12FindMyCommon14ReferenceClockOMa,
+                            _$s12FindMyCommon14ReferenceClockOMn,
+                            _$s12FindMyCommon14ReferenceClockON,
+                            _$s13NonModularSPI18TMGetReferenceTimeySbSpySdGSg_ADSpys5Int32VGSgtF,
+                            _$s13NonModularSPI24TMIsAutomaticTimeEnabledSbyF ]
+...

@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemoteManagementStore.framework/RemoteManagementStore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _InteractiveLegacyProfileIdentifierPrefix,
+                            _LegacyProfileIdentifierPrefix,
+                            _RMObserverStoreStoreDidChangeNotification,
+                            _RMStoreOptionAccountIdentifier,
+                            _RMStoreOptionDescription, _RMStoreOptionName,
+                            _RMStoreOptionPersonaIdentifier,
+                            _RMStoreXPCAgentMachServiceName,
+                            _RMStoreXPCDaemonMachServiceName ]
+    objc-classes:         [ RMAssetResolverController, RMBaseStore,
+                            RMConfigurationCombineApplicator,
+                            RMConfigurationMultipleApplicator,
+                            RMConfigurationSingleApplicator,
+                            RMConfigurationSubscriberClient,
+                            RMConfigurationSubscriberDelegate,
+                            RMConfigurationSubscriberDescription,
+                            RMConfigurationSubscriberEventStream,
+                            RMConfigurationSubscriberService,
+                            RMConfigurationSubscriberXPCListenerDelegate,
+                            RMConfigurationUIDetails, RMConfigurationUIItem,
+                            RMDeclarationManifest, RMDeclarationManifestItem,
+                            RMObserverStore, RMProfileStore, RMProviderStore,
+                            RMStatusPublisherDelegate,
+                            RMStatusPublisherDescription, RMStoreAssetKey,
+                            RMStoreDeclarationKey, RMStoreKeychainController,
+                            RMStoreLocalizable, RMStoreProfilesAdapter,
+                            RMStoreProfilesController, RMStoreResolvedAsset,
+                            RMStoreUnresolvedAsset,
+                            RMStoreUnresolvedKeychainAsset, RMStoreUtility,
+                            RMStoreXPCConnection, RMStoreXPCProxy,
+                            RMSubscribedConfigurationReference,
+                            RMSubscriberStore ]
+...

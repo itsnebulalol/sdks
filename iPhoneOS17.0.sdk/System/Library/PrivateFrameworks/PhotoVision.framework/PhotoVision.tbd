@@ -1,0 +1,59 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PhotoVision.framework/PhotoVision
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _GroupingIdentifierFromDate,
+                            _PVDefaultAdvancedStatusMergeCandidateLimit,
+                            _PVDefaultAdvancedStatusVerifiedPersonLimit,
+                            _PVErrorDomainPhotoVision, _PVErrorDomainVisionKit,
+                            _PVFaceCropImageEXIFOrientation,
+                            _PVFaceGetAbsoluteRectForImageSize,
+                            _PVFaceGetCenterAndSizeForNormalizedRect,
+                            _PVMetricsKey_PersonPromoter,
+                            _PVMetricsKey_PersonPromoter_NumberOfAssetsAvailableInPeopleHome,
+                            _PVMetricsKey_PersonPromoter_NumberOfFacesAvailableInPeopleHome,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAdded,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedByLocationStep,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupComplementStep,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupOverlapStep,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupTimeWarpingStep,
+                            _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedByTimeStep,
+                            _PVMetricsKey_PersonPromoter_NumberPersonsPromoterToGraphVerified,
+                            _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistance,
+                            _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistanceForBaby,
+                            _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistanceForChild,
+                            _PVPersonPromoterQuiescentStateRequirementsMinimumNumberOfFacesOnSourceForUpgrading,
+                            _PVPersonPromoterVersion, _PV_FACECROP_CROPBOX_KEY,
+                            _PV_FACECROP_CURRENT_VERSION,
+                            _PV_FACECROP_EXIF_ORIENTATION_STRING,
+                            _PV_FACECROP_FACEBOX_KEY, _PV_FACECROP_GROUPID_KEY,
+                            _PV_FACECROP_METADATA_NAMESPACE,
+                            _PV_FACECROP_METADATA_PREFIX,
+                            _PV_FACECROP_METADATA_ROOT_PATH,
+                            _PV_FACECROP_VERSION_KEY, _PhotoVisionVersionNumber,
+                            _PhotoVisionVersionString,
+                            _createOrientedCroppedAndScaledImageFromCGImageSource,
+                            _getImagePropertiesFromCGImageSource,
+                            _makeOrientationTransform,
+                            _makeRectClippedAgainstImageBounds,
+                            _makeRectWithAllIntegers, _makeScaledRect ]
+    objc-classes:         [ PVCanceler, PVFace, PVFaceCrop, PVFaceCropGenerator,
+                            PVFaceCropSourceDescriptor, PVFaceCropUtils,
+                            PVFaceprint, PVImage, PVObject, PVPersonCluster,
+                            PVPersonClusterManager, PVPersonDeduper,
+                            PVPersonDeduperLocationStep,
+                            PVPersonDeduperMarkovClusteringStep,
+                            PVPersonDeduperProfile,
+                            PVPersonDeduperSocialGroupComplementStep,
+                            PVPersonDeduperSocialGroupOverlaps,
+                            PVPersonDeduperSocialGroupTimeWarpingStep,
+                            PVPersonDeduperStep, PVPersonDeduperTimeStep,
+                            PVPersonPromoter, PVPersonPromoterProfile,
+                            PVUserDefaults, PVUtils, PVVisionHelper ]
+...

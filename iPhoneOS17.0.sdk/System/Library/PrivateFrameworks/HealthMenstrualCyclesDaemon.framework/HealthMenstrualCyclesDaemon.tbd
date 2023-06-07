@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HealthMenstrualCyclesDaemon.framework/HealthMenstrualCyclesDaemon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HDMCDeviceKeyValueStoreDomain,
+                            _HDMCHeartRateInputLocalFeatureAttributes,
+                            _HDMCKeyValueDomain, _HDMCLocalFeatureAttributes,
+                            _HDMCWristTemperatureInputLocalFeatureAttributes,
+                            _HKMCMenstrualCyclesOvulationConfirmationNotificationStateDomain,
+                            _HKMCMenstrualCyclesUnconfirmedDeviationNotificationStateDomain,
+                            _NSStringFromHDMCOvulationConfirmationNotificationState ]
+    objc-classes:         [ HDMCAccountDevicesInfo, HDMCAnalysisManager,
+                            HDMCDailyAnalytics, HDMCDailyMetric,
+                            HDMCDaySummaryBuilder, HDMCDaySummaryEnumerator,
+                            HDMCDeviationInputManager, HDMCDeviceInfo,
+                            HDMCDeviceScopedStorageManager,
+                            HDMCHeartStatisticsEnumerator, HDMCNotification,
+                            HDMCNotificationManager, HDMCNotificationSyncManager,
+                            HDMCOvulationConfirmationNotificationFeatureOffState,
+                            HDMCOvulationConfirmationNotificationFiredState,
+                            HDMCOvulationConfirmationNotificationScheduledState,
+                            HDMCOvulationConfirmationNotificationStateMachineState,
+                            HDMCOvulationConfirmationNotificationWaitingState,
+                            HDMCOvulationConfirmationStateManager,
+                            HDMCPostInstallUpdateManager, HDMCProfileExtension,
+                            HDMCRecentBasalBodyTemperatureRange,
+                            HDMCRecentBasalBodyTemperatureRangeQuery,
+                            HDMCSettingsMigrationManager,
+                            HDMCSettingsMigrationStep, HDMCSymptomHistoryBuilder,
+                            HDMCUnconfirmedDeviationNotificationScheduledState,
+                            HDMCUnconfirmedDeviationNotificationStateMachineState,
+                            HDMCUnconfirmedDeviationNotificationWaitingState,
+                            HDMCWatchFeatureSettings, HDMCWatchSettingKeys,
+                            HDMCWatchSettingValues,
+                            HDMCWatchSettingsCompatibilityManager,
+                            HDMCWatchSettingsReconciliationManager,
+                            HDMCWristTemperatureDailyAnalyticsEvent,
+                            HDMenstrualCyclesPlugin ]
+...

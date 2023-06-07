@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/LighthouseModelMonitoring.framework/LighthouseModelMonitoring
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LCFMMLogProactivePredictionRanker,
+                            _LCFMMLogShadowEvaluation,
+                            _LCFModelMonitoringLoggingCategoryProactivePredictionRanker,
+                            _LCFModelMonitoringLoggingCategoryShadowEvaluation,
+                            _LCFModelMonitoringLoggingSubsystem,
+                            _LCFModelMonitoringLoggingUtilsInit,
+                            _LighthouseModelMonitoringVersionNumber,
+                            _LighthouseModelMonitoringVersionString,
+                            _predictionSort ]
+    objc-classes:         [ LCFChangepointDetection, LCFFeatureImportance,
+                            LCFModelSelection, LCFProactiveMetricsComputation,
+                            LCFProactivePredictionRanker,
+                            LCFProactivePredictionRankerHolder,
+                            LCFShadowEvaluation, LCFShadowEvaluationParameters ]
+...
