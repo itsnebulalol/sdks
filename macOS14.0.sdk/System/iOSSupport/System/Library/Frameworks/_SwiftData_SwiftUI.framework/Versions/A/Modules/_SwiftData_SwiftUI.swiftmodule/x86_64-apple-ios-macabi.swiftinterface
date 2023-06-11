@@ -1,0 +1,116 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.111.22 clang-1500.0.21.3)
+// swift-module-flags: -target x86_64-apple-ios17.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -library-level api -module-name _SwiftData_SwiftUI
+// swift-module-flags-ignorable: -enable-experimental-feature Macros -enable-experimental-feature VariadicGenerics -target-min-inlining-version min -enable-bare-slash-regex -user-module-version 22.3
+import CoreData
+import Foundation
+@_exported import Observation
+import Swift
+@_exported import SwiftData
+import SwiftUI
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@available(swift 5.9)
+@available(macOS 14, iOS 17, tvOS 17, watchOS 10, *)
+extension SwiftData.ModelContext {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+extension SwiftUI.View {
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  public func modelContainer(for modelType: any SwiftData.PersistentModel.Type, inMemory: Swift.Bool = false, isAutosaveEnabled: Swift.Bool = true, isUndoEnabled: Swift.Bool = false, onSetup: @escaping (Swift.Result<SwiftData.ModelContainer, any Swift.Error>) -> Swift.Void = { _ in }) -> some SwiftUI.View
+  
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  public func modelContainer(for modelTypes: [any SwiftData.PersistentModel.Type], inMemory: Swift.Bool = false, isAutosaveEnabled: Swift.Bool = true, isUndoEnabled: Swift.Bool = false, onSetup: @escaping (Swift.Result<SwiftData.ModelContainer, any Swift.Error>) -> Swift.Void = { _ in }) -> some SwiftUI.View
+  
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) public func modelContainer(_ container: SwiftData.ModelContainer) -> some SwiftUI.View
+  
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+extension SwiftUI.Scene {
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) public func modelContainer(for modelType: any SwiftData.PersistentModel.Type, inMemory: Swift.Bool = false, isAutosaveEnabled: Swift.Bool = true, isUndoEnabled: Swift.Bool = false, onSetup: @escaping (Swift.Result<SwiftData.ModelContainer, any Swift.Error>) -> Swift.Void = { _ in }) -> some SwiftUI.Scene
+  
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) public func modelContainer(for modelTypes: [any SwiftData.PersistentModel.Type], inMemory: Swift.Bool = false, isAutosaveEnabled: Swift.Bool = true, isUndoEnabled: Swift.Bool = false, onSetup: @escaping (Swift.Result<SwiftData.ModelContainer, any Swift.Error>) -> Swift.Void = { _ in }) -> some SwiftUI.Scene
+  
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) public func modelContainer(_ container: SwiftData.ModelContainer) -> some SwiftUI.Scene
+  
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@propertyWrapper @_Concurrency.MainActor(unsafe) public struct Query<Element, Result> : SwiftUI.DynamicProperty where Element : SwiftData.PersistentModel, Element == Result.Element, Result : Swift.Collection {
+  @_Concurrency.MainActor(unsafe) public var wrappedValue: Result {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func update()
+  @_Concurrency.MainActor(unsafe) public static var _propertyBehaviors: Swift.UInt32 {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init<Value>(filter: Foundation.Predicate<Element>? = nil, sort keyPath: Swift.KeyPath<Element, Value>, order: Foundation.SortOrder = .forward, animation: SwiftUI.Animation) where Result == [Element], Value : Swift.Comparable
+  @_Concurrency.MainActor(unsafe) public init<Value>(filter: Foundation.Predicate<Element>? = nil, sort keyPath: Swift.KeyPath<Element, Value>, order: Foundation.SortOrder = .forward, transaction: SwiftUI.Transaction? = nil) where Result == [Element], Value : Swift.Comparable
+  @_Concurrency.MainActor(unsafe) public init(filter: Foundation.Predicate<Element>? = nil, sort descriptors: [Foundation.SortDescriptor<Element>] = [], animation: SwiftUI.Animation) where Result == [Element]
+  @_Concurrency.MainActor(unsafe) public init(filter: Foundation.Predicate<Element>? = nil, sort descriptors: [Foundation.SortDescriptor<Element>] = [], transaction: SwiftUI.Transaction? = nil) where Result == [Element]
+  @_Concurrency.MainActor(unsafe) public init(_ descriptor: SwiftData.FetchDescriptor<Element>, transaction: SwiftUI.Transaction? = nil) where Result == [Element]
+  @_Concurrency.MainActor(unsafe) public init(_ descriptor: SwiftData.FetchDescriptor<Element>, animation: SwiftUI.Animation) where Result == [Element]
+}
+@available(*, unavailable)
+extension _SwiftData_SwiftUI.Query : Swift.Sendable {
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+extension SwiftUI.View {
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  public func modelContext(_ modelContext: SwiftData.ModelContext) -> some SwiftUI.View
+  
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+extension SwiftUI.Scene {
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) public func modelContext(_ modelContext: SwiftData.ModelContext) -> some SwiftUI.Scene
+  
+}
+@available(iOS 17.0, macOS 14.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+extension SwiftUI.DocumentGroup where Document == _SwiftData_SwiftUI.ModelDocument {
+  public init(editing modelType: any SwiftData.PersistentModel.Type, contentType: UniformTypeIdentifiers.UTType, editor: () -> Content, prepareDocument: @escaping ((SwiftData.ModelContext) -> Swift.Void) = { _ in })
+  public init(editing modelTypes: [any SwiftData.PersistentModel.Type], contentType: UniformTypeIdentifiers.UTType, editor: () -> Content, prepareDocument: @escaping ((SwiftData.ModelContext) -> Swift.Void) = { _ in })
+  public init(editing schema: SwiftData.Schema, contentType: UniformTypeIdentifiers.UTType, editor: () -> Content, prepareDocument: @escaping ((SwiftData.ModelContext) -> Swift.Void) = { _ in })
+  public init(viewing modelType: any SwiftData.PersistentModel.Type, contentType: UniformTypeIdentifiers.UTType, viewer: () -> Content)
+  public init(viewing modelTypes: [any SwiftData.PersistentModel.Type], contentType: UniformTypeIdentifiers.UTType, viewer: () -> Content)
+  public init(viewing schema: SwiftData.Schema, contentType: UniformTypeIdentifiers.UTType, viewer: () -> Content)
+}
+@available(iOS 17.0, macOS 14.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+public struct ModelDocument {
+}
+@available(*, unavailable)
+extension _SwiftData_SwiftUI.ModelDocument : Swift.Sendable {
+}
+@available(macOS 14.0, *)
+@available(iOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+extension SwiftUI.NewDocumentAction {
+  public func callAsFunction(contentType: UniformTypeIdentifiers.UTType, prepareDocument: @escaping (SwiftData.ModelContext) -> Swift.Void)
+}
+@available(swift 5.9)
+@available(macOS 14, iOS 17, tvOS 17, watchOS 10, *)
+@usableFromInline
+internal enum Log {
+}
+extension SwiftUI.EnvironmentValues {
+  @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+  public var modelContext: SwiftData.ModelContext {
+    get
+    set
+  }
+}

@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+install-name:    '/System/Library/PrivateFrameworks/ScreenSharing.framework/Versions/A/Frameworks/ScreenSharingUI.framework/Versions/A/ScreenSharingUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+    symbols:         [ '_$s15ScreenSharingUI0aB17UIFactoryInternalC38makeDisplayConfigurationViewController8delegateSo06NSViewJ0CSo09SSDisplayH8Delegate_p_tF', 
+                       '_$s15ScreenSharingUI0aB17UIFactoryInternalC38makeDisplayConfigurationViewController8delegateSo06NSViewJ0CSo09SSDisplayH8Delegate_p_tFTq', 
+                       '_$s15ScreenSharingUI0aB17UIFactoryInternalCACycfC', '_$s15ScreenSharingUI0aB17UIFactoryInternalCACycfc', 
+                       '_$s15ScreenSharingUI0aB17UIFactoryInternalCMa', '_$s15ScreenSharingUI0aB17UIFactoryInternalCMn', 
+                       '_$s15ScreenSharingUI0aB17UIFactoryInternalCN', '_$s15ScreenSharingUI0aB17UIFactoryInternalCfD', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV05SwiftC00F0AAMc', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV07displayeF5ModelAA0defH0CvpfP', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV07displayeF5ModelAcA0defH0C_tcfC', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV4bodyQrvg', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV4bodyQrvpMV', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewV4bodyQrvpQOMQ', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewVMa', '_$s15ScreenSharingUI24DisplayConfigurationViewVMn', 
+                       '_$s15ScreenSharingUI24DisplayConfigurationViewVN', '_$s15ScreenSharingUI29DisplayConfigurationViewModelC07displayE8Delegate0hE0ACSo09SSDisplayeI0_p_So0jE0CSgtcfC', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC07displayE8Delegate0hE0ACSo09SSDisplayeI0_p_So0jE0CSgtcfCTq', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC07displayE8Delegate0hE0ACSo09SSDisplayeI0_p_So0jE0CSgtcfc', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC11displayTypeSo09SSDisplayI0VvpfP', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC12_displayType33_C407BF9BD41C3277DEDE1C8576342CEELL7Combine9PublishedVySo09SSDisplayI0VGvpfi', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC13subscriptions33_C407BF9BD41C3277DEDE1C8576342CEELLSay7Combine14AnyCancellableCGvpfi', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC18displayTypeOptionsSayAA0dI6OptionVGvpfP', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC19_displayTypeOptions33_C407BF9BD41C3277DEDE1C8576342CEELL7Combine9PublishedVySayAA0dI6OptionVGGvpfi', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC35$__lazy_storage_$_updateButtonLabel33_C407BF9BD41C3277DEDE1C8576342CEELLSSSgvpfi', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC37$__lazy_storage_$_continueButtonLabel33_C407BF9BD41C3277DEDE1C8576342CEELLSSSgvpfi', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelC7Combine16ObservableObjectAAMc', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelCMa', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelCMm', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelCMn', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelCN', '_$s15ScreenSharingUI29DisplayConfigurationViewModelCfD', 
+                       '_$s15ScreenSharingUI29DisplayConfigurationViewModelCfd' ]
+    objc-classes:    [ SSDisplayConfiguration, SSScreenDetails, ScreenSharingUIFactory, 
+                       _TtC15ScreenSharingUI30ScreenSharingUIFactoryInternal ]
+...

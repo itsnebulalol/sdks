@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                   arm64e-macos, arm64e-maccatalyst ]
+install-name:    '/System/Library/PrivateFrameworks/UserSafetyML.framework/Versions/A/UserSafetyML'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                       arm64e-macos, arm64e-maccatalyst ]
+    symbols:         [ _USMLAnalysisConfigurationDebugFramesOutputPathPrefixKey, 
+                       _USMLAnalysisConfigurationDeviceTypeKey, _USMLEnableAllClasses, 
+                       _USMLEnableImageDetection, _USMLErrorDomain, _USMLErrorFromSCML, 
+                       _USMLHandlerImageClassificationScores, _USMLHandlerImageDetections, 
+                       _USMLImageClassificationLabelNSFWAny, _USMLImageClassificationLabelNSFWExplicit, 
+                       _USMLImageModelVersionV1_5_0, _USMLImageModelVersionV1_6_0, 
+                       _USMLImageModelVersionV1_6_1, _USMLImageScaleMethod, _USMLImageScaleMethodCGInterpolationHigh, 
+                       _USMLImageScaleMethodCGInterpolationLow, _USMLImageScaleMethodCGInterpolationMedium, 
+                       _USMLImageScaleMethodCGInterpolationNone, _USMLImageScaleMethodvImage, 
+                       _USMLImageSensitivity, _USMLImageSensitivityScore, _USMLTrackPerformance, 
+                       _USMLUseANE, _USMLUseAnyAvailableDevice, _USMLUseCPU, _USMLUseGPU, 
+                       _USMLUseImageAnalyzer, _USMLUseMTLDevice, _USMLUseTextAnalyzer, 
+                       _UserSafetyMLVersionNumber, _UserSafetyMLVersionString ]
+    objc-classes:    [ USMLAnalysisConfiguration, USMLAnalysisResult, USMLDetectionBox, 
+                       USMLHandler, USMLImageAnalysisResult, USMLImageDetectionResult, 
+                       USMLVideoAnalysisConfiguration, USMLVideoAnalysisResult, USMLVideoAnalyzer ]
+...

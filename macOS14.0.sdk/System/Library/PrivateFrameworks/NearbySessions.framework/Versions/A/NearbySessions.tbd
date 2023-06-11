@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+install-name:    '/System/Library/PrivateFrameworks/NearbySessions.framework/Versions/A/NearbySessions'
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+    symbols:         [ '_$s14NearbySessions0A14GroupInterfaceO010hostObjectD0So14NSXPCInterfaceCvMZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO010hostObjectD0So14NSXPCInterfaceCvgZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO010hostObjectD0So14NSXPCInterfaceCvsZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO012clientObjectD0So14NSXPCInterfaceCvMZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO012clientObjectD0So14NSXPCInterfaceCvgZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO012clientObjectD0So14NSXPCInterfaceCvsZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO14CopresenceCore12XPCInterfaceAAMc', 
+                       '_$s14NearbySessions0A14GroupInterfaceO8identity14CopresenceCore11XPCIdentityOvMZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO8identity14CopresenceCore11XPCIdentityOvgZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceO8identity14CopresenceCore11XPCIdentityOvsZ', 
+                       '_$s14NearbySessions0A14GroupInterfaceOMa', '_$s14NearbySessions0A14GroupInterfaceOMn', 
+                       '_$s14NearbySessions0A14GroupInterfaceON', '_$s14NearbySessions0A21GroupClientConnectionC10setMembersyyShySSGF', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC18setMembersCallbackyShySSGcSgvM', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC18setMembersCallbackyShySSGcSgvg', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC18setMembersCallbackyShySSGcSgvpMV', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC18setMembersCallbackyShySSGcSgvpWvd', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC18setMembersCallbackyShySSGcSgvs', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC22handleServerDisconnectyyF', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC26serverDisconnectedCallbackyycSgvM', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC26serverDisconnectedCallbackyycSgvg', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC26serverDisconnectedCallbackyycSgvpMV', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC26serverDisconnectedCallbackyycSgvpWvd', 
+                       '_$s14NearbySessions0A21GroupClientConnectionC26serverDisconnectedCallbackyycSgvs', 
+                       '_$s14NearbySessions0A21GroupClientConnectionCACycfC', '_$s14NearbySessions0A21GroupClientConnectionCACycfc', 
+                       '_$s14NearbySessions0A21GroupClientConnectionCMa', '_$s14NearbySessions0A21GroupClientConnectionCMn', 
+                       '_$s14NearbySessions0A21GroupClientConnectionCMo', '_$s14NearbySessions0A21GroupClientConnectionCMs', 
+                       '_$s14NearbySessions0A21GroupClientConnectionCfD', '_$s14NearbySessions2ggopySSxSglF', 
+                       '_$s14NearbySessions3LogV4host2os6LoggerVvau', '_$s14NearbySessions3LogV4host2os6LoggerVvgZ', 
+                       '_$s14NearbySessions3LogV4host2os6LoggerVvpZ', '_$s14NearbySessions3LogV5group2os6LoggerVvau', 
+                       '_$s14NearbySessions3LogV5group2os6LoggerVvgZ', '_$s14NearbySessions3LogV5group2os6LoggerVvpZ', 
+                       '_$s14NearbySessions3LogV6client2os6LoggerVvau', '_$s14NearbySessions3LogV6client2os6LoggerVvgZ', 
+                       '_$s14NearbySessions3LogV6client2os6LoggerVvpZ', '_$s14NearbySessions3LogV7session2os6LoggerVvau', 
+                       '_$s14NearbySessions3LogV7session2os6LoggerVvgZ', '_$s14NearbySessions3LogV7session2os6LoggerVvpZ', 
+                       '_$s14NearbySessions3LogV8provider2os6LoggerVvau', '_$s14NearbySessions3LogV8provider2os6LoggerVvgZ', 
+                       '_$s14NearbySessions3LogV8provider2os6LoggerVvpZ', '_$s14NearbySessions3LogVACycfC', 
+                       '_$s14NearbySessions3LogVMa', '_$s14NearbySessions3LogVMn', 
+                       '_$s14NearbySessions3LogVN', '_$s14NearbySessions9SubsystemO8rawValueACSgSS_tcfC', 
+                       '_$s14NearbySessions9SubsystemO8rawValueSSvg', '_$s14NearbySessions9SubsystemO8rawValueSSvpMV', 
+                       '_$s14NearbySessions9SubsystemOMa', '_$s14NearbySessions9SubsystemOMn', 
+                       '_$s14NearbySessions9SubsystemON', '_$s14NearbySessions9SubsystemOSHAAMc', 
+                       '_$s14NearbySessions9SubsystemOSQAAMc', '_$s14NearbySessions9SubsystemOSYAAMc', 
+                       '_$s2os6LoggerV14NearbySessionsE9subsystem8categoryACx_SStcSYRzSS8RawValueRtzlufC', 
+                       '_$ss26DefaultStringInterpolationV14NearbySessionsE06appendC0yyxSglF', 
+                       _NearbySessionsVersionNumber, _NearbySessionsVersionString ]
+    objc-classes:    [ _TtC14NearbySessions27NearbyGroupClientConnection ]
+...

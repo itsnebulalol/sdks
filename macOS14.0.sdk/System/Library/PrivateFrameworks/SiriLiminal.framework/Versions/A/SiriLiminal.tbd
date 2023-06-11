@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                   arm64e-macos, arm64e-maccatalyst ]
+install-name:    '/System/Library/PrivateFrameworks/SiriLiminal.framework/Versions/A/SiriLiminal'
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                       arm64e-macos, arm64e-maccatalyst ]
+    symbols:         [ _SLErrorDomain, _SLLogContextFacilityCoreSpeech, _SLLogInitIfNeeded, 
+                       _SLLoggingSubsystem, _SiriLiminalVersionNumber, _SiriLiminalVersionString, 
+                       _kInvocationTokenHS, _kInvocationTokenJS, _kInvocationTokenMagus, 
+                       _kSLAssetVersion, _kSLAudioSourceOption, _kSLInvocationType, 
+                       _kSLLanguageCode, _kSLLoggingContextFramework, _kSLNumAsrRecords, 
+                       _kSLNumTokensTopPath, _kSLThresholdUsed, _kSLTrailingSilenceDuration, 
+                       _kSLVoiceTriggerEventInfo ]
+    objc-classes:    [ SLASRFeatureExtractor, SLASRFeatures, SLBertClassifier, SLBertClassifierResult, 
+                       SLLRNNFeatures, SLODLDClassifierV1, SLODLDConfigDecoder, SLODLDInputContext, 
+                       SLODLDInputTokenParams, SLODLDProcessor, SLODLDProcessorResult, 
+                       SLProgressiveCheckerAnalyzer, SLProgressiveCheckerContext, 
+                       SLProgressiveCheckerResult, SLRegexMatcher, SLSentencePieceModule, 
+                       SLUresMitigator, SLUresMitigatorIpFeats, SLUresMitigatorResult, 
+                       SLUtils ]
+...

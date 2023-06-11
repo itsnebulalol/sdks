@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+install-name:    '/System/Library/PrivateFrameworks/WorkflowUIServices.framework/Versions/A/WorkflowUIServices'
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+    symbols:         [ '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV10descriptorACSo20WFWorkflowDescriptorC_tcfC', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV19_AppIntents_SwiftUI06ShareddF0AAMc', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvg', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvpMV', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV4bodyQrvpQOMQ', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV4fromACs7Decoder_p_tKcfC', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV6encode2toys7Encoder_p_tKF', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewV7SwiftUI0F0AAMc', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewVMa', '_$s18WorkflowUIServices25ShortcutIndexedSearchViewVMn', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewVN', '_$s18WorkflowUIServices25ShortcutIndexedSearchViewVSEAAMc', 
+                       '_$s18WorkflowUIServices25ShortcutIndexedSearchViewVSeAAMc', 
+                       _WFCGColorIsPerceivedLight, _WFCGColorPerceivedLightness, 
+                       _WFFocusConfigurationHostXPCInterface, _WFFocusConfigurationServiceXPCInterface, 
+                       _WFLogCategoryFocusConfiguration, _WFRecentDocumentsKey, _WFWidgetColorsFromBundle, 
+                       _WFWidgetConfigurationHostXPCInterface, _WFWidgetConfigurationServiceXPCInterface, 
+                       _WFWidgetGetDefaultColors, _getWFFocusConfigurationLogObject ]
+    objc-classes:    [ WFAppIconColorMatcher, WFDockTileMenu, WFFloatingLayer, WFFloatingViewConfiguration, 
+                       WFFocusConfigurationButton, WFFocusConfigurationContextualActionOptions, 
+                       WFFocusConfigurationOptions, WFFocusConfigurationRequest, 
+                       WFFocusConfigurationUIState, WFFocusConfigurationViewController, 
+                       WFJoeColorUtility, WFMatchedAppIconColorData, WFRecentDocumentsController, 
+                       WFRecentDocumentsMenu, WFWidgetConfigurationCardView, WFWidgetConfigurationContainerView, 
+                       WFWidgetConfigurationOptions, WFWidgetConfigurationRequest, 
+                       WFWidgetConfigurationResponse, WFWidgetConfigurationView, 
+                       WFWidgetConfigurationViewController ]
+...

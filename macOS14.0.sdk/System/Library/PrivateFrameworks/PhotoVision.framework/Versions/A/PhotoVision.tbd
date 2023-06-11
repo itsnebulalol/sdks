@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                   arm64e-macos, arm64e-maccatalyst ]
+install-name:    '/System/Library/PrivateFrameworks/PhotoVision.framework/Versions/A/PhotoVision'
+allowable-clients:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                       arm64e-macos, arm64e-maccatalyst ]
+    clients:         [ AXMediaUtilities, AXMediaUtilitiesService, CoreDuet, MediaMiningKit, 
+                       Memories, NotesUI, PhotoAnalysis, PhotoVisionTool, PhotosGraph, 
+                       PhotosTests, VideoProcessing, coreduetd, duetknowledged, photolibraryd ]
+exports:
+  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                       arm64e-macos, arm64e-maccatalyst ]
+    symbols:         [ _GroupingIdentifierFromDate, _PVDefaultAdvancedStatusMergeCandidateLimit, 
+                       _PVDefaultAdvancedStatusVerifiedPersonLimit, _PVErrorDomainPhotoVision, 
+                       _PVErrorDomainVisionKit, _PVFaceCropImageEXIFOrientation, 
+                       _PVFaceGetAbsoluteRectForImageSize, _PVFaceGetCenterAndSizeForNormalizedRect, 
+                       _PVMetricsKey_PersonPromoter, _PVMetricsKey_PersonPromoter_NumberOfAssetsAvailableInPeopleHome, 
+                       _PVMetricsKey_PersonPromoter_NumberOfFacesAvailableInPeopleHome, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAdded, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedByLocationStep, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupComplementStep, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupOverlapStep, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedBySocialGroupTimeWarpingStep, 
+                       _PVMetricsKey_PersonPromoter_NumberOfGraphMergeCandidatesAddedByTimeStep, 
+                       _PVMetricsKey_PersonPromoter_NumberPersonsPromoterToGraphVerified, 
+                       _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistance, 
+                       _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistanceForBaby, 
+                       _PVPersonClusterManagerMinimiumDistanceRequiredForCommonAssetDistanceForChild, 
+                       _PVPersonPromoterQuiescentStateRequirementsMinimumNumberOfFacesOnSourceForUpgrading, 
+                       _PVPersonPromoterVersion, _PV_FACECROP_CROPBOX_KEY, _PV_FACECROP_CURRENT_VERSION, 
+                       _PV_FACECROP_EXIF_ORIENTATION_STRING, _PV_FACECROP_FACEBOX_KEY, 
+                       _PV_FACECROP_GROUPID_KEY, _PV_FACECROP_METADATA_NAMESPACE, 
+                       _PV_FACECROP_METADATA_PREFIX, _PV_FACECROP_METADATA_ROOT_PATH, 
+                       _PV_FACECROP_VERSION_KEY, _PhotoVisionVersionNumber, _PhotoVisionVersionString, 
+                       _createOrientedCroppedAndScaledImageFromCGImageSource, _getImagePropertiesFromCGImageSource, 
+                       _makeOrientationTransform, _makeRectClippedAgainstImageBounds, 
+                       _makeRectWithAllIntegers, _makeScaledRect ]
+    objc-classes:    [ PVCanceler, PVFace, PVFaceCrop, PVFaceCropGenerator, PVFaceCropSourceDescriptor, 
+                       PVFaceCropUtils, PVFaceprint, PVImage, PVObject, PVPersonCluster, 
+                       PVPersonClusterManager, PVPersonDeduper, PVPersonDeduperLocationStep, 
+                       PVPersonDeduperMarkovClusteringStep, PVPersonDeduperProfile, 
+                       PVPersonDeduperSocialGroupComplementStep, PVPersonDeduperSocialGroupOverlaps, 
+                       PVPersonDeduperSocialGroupTimeWarpingStep, PVPersonDeduperStep, 
+                       PVPersonDeduperTimeStep, PVPersonPromoter, PVPersonPromoterProfile, 
+                       PVUserDefaults, PVUtils, PVVisionHelper ]
+...

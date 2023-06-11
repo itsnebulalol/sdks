@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+install-name:    '/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit'
+exports:
+  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
+    symbols:         [ _RP_Micro, _RP_RoundNumberToNearestMultiple, _RP_RoundNumberWithSigFigs, 
+                       _SCRemoteQueue_CreateReceiverQueue, _SCRemoteQueue_CreateSenderQueue, 
+                       _SCRemoteQueue_Destroy, _SCRemoteQueue_EnqueueSampleBuffer, 
+                       _SCRemoteQueue_StartSenderQueue, _SCRemoteQueue_StopSenderQueue, 
+                       _SCRemoteQueue_UpdateReceiverQueue, _SCStreamErrorDomain, 
+                       _SCStreamFrameInfoContentRect, _SCStreamFrameInfoContentScale, 
+                       _SCStreamFrameInfoDirtyRects, _SCStreamFrameInfoDisplayTime, 
+                       _SCStreamFrameInfoScaleFactor, _SCStreamFrameInfoScreenRect, 
+                       _SCStreamFrameInfoStatus, _SCStream_UpdateLatency ]
+    objc-classes:    [ RPFeatureFlagUtility, RPHardwareUtility, SCCompositeConfiguration, 
+                       SCContentFilter, SCContentFilterAppsAndWindowsPinnedToDisplayInformation, 
+                       SCContentFilterDesktopIndependentWindowInformation, SCContentFilterDisplayInformation, 
+                       SCContentSharingAccelerator, SCContentSharingNotification, 
+                       SCContentSharingPicker, SCContentSharingPickerConfiguration, 
+                       SCContentSharingPickerInfo, SCContentSharingSession, SCContentSharingSessionManager, 
+                       SCContentSharingSessionMetadata, SCControlCenterManager, SCDisplay, 
+                       SCDisplayStreamCaptureInfo, SCEventConnection, SCHotKeyListener, 
+                       SCPreview, SCPreviewAttributes, SCRemoteQueueXPCObject, SCRunningApplication, 
+                       SCScreenshotManager, SCShareableContent, SCShareableContentInfo, 
+                       SCShareableContentInformation, SCStream, SCStreamConfiguration, 
+                       SCStreamInfo, SCStreamList, SCStreamListEntry, SCStreamManager, 
+                       SCWindow, SharingSessionSerialized ]
+...
